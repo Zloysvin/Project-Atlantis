@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: e3e824c57ac6a3d498b8f5960216463e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6126666271773055391
+    second: ShipUI_0
+  - first:
+      213: 4893101437600982109
+    second: ShipUI_1
+  - first:
+      213: 6518264910225856305
+    second: ShipUI_2
+  - first:
+      213: -831790681302326914
+    second: ShipUI_3
+  - first:
+      213: -2200811636152642389
+    second: ShipUI_4
+  - first:
+      213: 3604556537987565048
+    second: ShipUI_5
+  - first:
+      213: 2087575877704370232
+    second: ShipUI_6
+  - first:
+      213: 4575483698283397028
+    second: ShipUI_7
+  - first:
+      213: 1072577757231220042
+    second: ShipUI_8
+  - first:
+      213: 5619592702249903972
+    second: ShipUI_9
+  - first:
+      213: 2765940450055194423
+    second: ShipUI_10
+  - first:
+      213: -8891637228337298032
+    second: ShipUI_11
+  - first:
+      213: -3305127161889780283
+    second: ShipUI_12
+  - first:
+      213: 8649131079591930031
+    second: ShipUI_13
+  - first:
+      213: 8436352861879236814
+    second: ShipUI_14
+  - first:
+      213: 4733530039073710751
+    second: ShipUI_15
+  - first:
+      213: 1566125223110203260
+    second: ShipUI_16
+  - first:
+      213: 5987587157867648896
+    second: ShipUI_17
+  - first:
+      213: -4800835811043545371
+    second: ShipUI_18
+  - first:
+      213: 2655987866993569849
+    second: ShipUI_19
+  - first:
+      213: -6588071657987885056
+    second: ShipUI_20
+  - first:
+      213: 794210063171837026
+    second: ShipUI_21
+  - first:
+      213: 4028505940714411839
+    second: ShipUI_22
+  - first:
+      213: -9115882700862648990
+    second: ShipUI_23
+  - first:
+      213: 4988261925576480469
+    second: ShipUI_24
+  - first:
+      213: -6164316796654500753
+    second: ShipUI_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShipUI_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 490
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166a99d7c75b9faa0800000000000000
+      internalID: -6126666271773055391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Energy
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 460
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54e82e25d9c7e340800000000000000
+      internalID: 4893101437600982109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Beacon
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 460
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71ae7948c2e474f0800000000000000
+      internalID: -831790681302326914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Engine
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 460
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba453913a752571e0800000000000000
+      internalID: -2200811636152642389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Ship
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 307
+        width: 463
+        height: 233
+      alignment: 9
+      pivot: {x: 0.55293095, y: 0.34807277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f58f83d215f50230800000000000000
+      internalID: 3604556537987565048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_SonarSend
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 253
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8792cea32f31570800000000000000
+      internalID: 8436352861879236814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_SonarListen
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 253
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0875466ebce281350800000000000000
+      internalID: 5987587157867648896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Frame
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 68
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d04f84bf0ed7180800000000000000
+      internalID: -9115882700862648990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_FrameBG
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 67
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d69798dacdd93540800000000000000
+      internalID: 4988261925576480469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_FramePattern
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 66
+        width: 144
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f644f6c8882f37aa0800000000000000
+      internalID: -6164316796654500753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Screw
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 128
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32dc96b1cb5c8044aa205cbc7a64fec
+      internalID: 1914893547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a5ae9105157b7ca4497d867d5ab456a1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShipUI_0: -6126666271773055391
+      ShipUI_10: 2765940450055194423
+      ShipUI_11: -8891637228337298032
+      ShipUI_12: -3305127161889780283
+      ShipUI_13: 8649131079591930031
+      ShipUI_15: 4733530039073710751
+      ShipUI_16: 1566125223110203260
+      ShipUI_18: -4800835811043545371
+      ShipUI_19: 2655987866993569849
+      ShipUI_2: 6518264910225856305
+      ShipUI_20: -6588071657987885056
+      ShipUI_21: 794210063171837026
+      ShipUI_22: 4028505940714411839
+      ShipUI_6: 2087575877704370232
+      ShipUI_7: 4575483698283397028
+      ShipUI_8: 1072577757231220042
+      ShipUI_9: 5619592702249903972
+      ShipUI_Beacon: -831790681302326914
+      ShipUI_Energy: 4893101437600982109
+      ShipUI_Engine: -2200811636152642389
+      ShipUI_Frame: -9115882700862648990
+      ShipUI_FrameBG: 4988261925576480469
+      ShipUI_FramePattern: -6164316796654500753
+      ShipUI_Screw: 1914893547
+      ShipUI_Ship: 3604556537987565048
+      ShipUI_SonarListen: 5987587157867648896
+      ShipUI_SonarSend: 8436352861879236814
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

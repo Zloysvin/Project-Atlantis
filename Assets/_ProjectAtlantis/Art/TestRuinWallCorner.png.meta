@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: dae6523eabcd9ad4ca742f80a949678f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7166978555992270327
+    second: TestRuinWallCorner_0
+  - first:
+      213: -787255068628058909
+    second: TestRuinWallCorner_1
+  - first:
+      213: -2242643332732911640
+    second: TestRuinWallCorner_2
+  - first:
+      213: -9065475153734088439
+    second: TestRuinWallCorner_3
+  - first:
+      213: 3432856385691746266
+    second: TestRuinWallCorner_4
+  - first:
+      213: -1056829527780575276
+    second: TestRuinWallCorner_5
+  - first:
+      213: -756151431057122470
+    second: TestRuinWallCorner_6
+  - first:
+      213: -8849918475972848372
+    second: TestRuinWallCorner_7
+  - first:
+      213: 4744998000168130104
+    second: TestRuinWallCorner_8
+  - first:
+      213: 2962200939979668804
+    second: TestRuinWallCorner_9
+  - first:
+      213: 1152210214102129905
+    second: TestRuinWallCorner_10
+  - first:
+      213: 1235020140866331119
+    second: TestRuinWallCorner_11
+  - first:
+      213: -1073314351905419584
+    second: TestRuinWallCorner_12
+  - first:
+      213: 3640802615787538733
+    second: TestRuinWallCorner_13
+  - first:
+      213: -2039073035416689837
+    second: TestRuinWallCorner_14
+  - first:
+      213: -7480413585388219033
+    second: TestRuinWallCorner_15
+  - first:
+      213: 2720130385186068382
+    second: TestRuinWallCorner_16
+  - first:
+      213: 5421769943311736787
+    second: TestRuinWallCorner_17
+  - first:
+      213: -4950209638815006489
+    second: TestRuinWallCorner_18
+  - first:
+      213: 385443729189989682
+    second: TestRuinWallCorner_19
+  - first:
+      213: 1966084168880927743
+    second: TestRuinWallCorner_20
+  - first:
+      213: 2879231278018363440
+    second: TestRuinWallCorner_21
+  - first:
+      213: 941596214216117984
+    second: TestRuinWallCorner_22
+  - first:
+      213: 364001472507972300
+    second: TestRuinWallCorner_23
+  - first:
+      213: -5559830029347991155
+    second: TestRuinWallCorner_24
+  - first:
+      213: 3122646461822776353
+    second: TestRuinWallCorner_25
+  - first:
+      213: -1645543356063303703
+    second: TestRuinWallCorner_26
+  - first:
+      213: 1711994689052352584
+    second: TestRuinWallCorner_27
+  - first:
+      213: 8616548147174695793
+    second: TestRuinWallCorner_28
+  - first:
+      213: 6132867037468573294
+    second: TestRuinWallCorner_29
+  - first:
+      213: 2399516159253542882
+    second: TestRuinWallCorner_30
+  - first:
+      213: 6688189155692268353
+    second: TestRuinWallCorner_31
+  - first:
+      213: -1958587089935307852
+    second: TestRuinWallCorner_32
+  - first:
+      213: -4833346754299113632
+    second: TestRuinWallCorner_33
+  - first:
+      213: 2322003913225777729
+    second: TestRuinWallCorner_34
+  - first:
+      213: -1610022401181552383
+    second: TestRuinWallCorner_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TestRuinWallCorner_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539254454eeaa264180ea6de847b278a
+      internalID: -2081463592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2cf90de8cc7bf704b92a0916286eaf21
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TestRuinWallCorner_0: -2081463592
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
