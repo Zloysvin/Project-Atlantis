@@ -19,6 +19,7 @@ public class RotateToTarget : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
 
         Vector2 currentPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        Vector2 pos = target != null ? target.position : currentPos;
+        transform.position = Vector2.MoveTowards(transform.position, pos, moveSpeed * Time.deltaTime);
     }
 }

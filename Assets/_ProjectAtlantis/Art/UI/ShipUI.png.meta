@@ -115,9 +115,9 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -175,11 +175,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShipUI_0
+      name: ShipUI_FrameSmall
       rect:
         serializedVersion: 2
-        x: 45
-        y: 490
+        x: 38
+        y: 661
         width: 73
         height: 73
       alignment: 0
@@ -200,8 +200,8 @@ TextureImporter:
       name: ShipUI_Energy
       rect:
         serializedVersion: 2
-        x: 125
-        y: 460
+        x: 119
+        y: 630
         width: 120
         height: 120
       alignment: 0
@@ -222,8 +222,8 @@ TextureImporter:
       name: ShipUI_Beacon
       rect:
         serializedVersion: 2
-        x: 235
-        y: 460
+        x: 228
+        y: 630
         width: 120
         height: 120
       alignment: 0
@@ -244,8 +244,8 @@ TextureImporter:
       name: ShipUI_Engine
       rect:
         serializedVersion: 2
-        x: 366
-        y: 460
+        x: 357
+        y: 629
         width: 120
         height: 120
       alignment: 0
@@ -263,13 +263,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShipUI_Ship
+      name: ShipUI_ShipOutline
       rect:
         serializedVersion: 2
-        x: 589
-        y: 307
+        x: 601
+        y: 360
         width: 463
-        height: 233
+        height: 201
       alignment: 9
       pivot: {x: 0.55293095, y: 0.34807277}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,8 +288,8 @@ TextureImporter:
       name: ShipUI_SonarSend
       rect:
         serializedVersion: 2
-        x: 134
-        y: 253
+        x: 127
+        y: 425
         width: 120
         height: 120
       alignment: 0
@@ -310,8 +310,8 @@ TextureImporter:
       name: ShipUI_SonarListen
       rect:
         serializedVersion: 2
-        x: 270
-        y: 253
+        x: 266
+        y: 424
         width: 120
         height: 120
       alignment: 0
@@ -332,8 +332,8 @@ TextureImporter:
       name: ShipUI_Frame
       rect:
         serializedVersion: 2
-        x: 32
-        y: 68
+        x: 26
+        y: 238
         width: 144
         height: 143
       alignment: 0
@@ -354,8 +354,8 @@ TextureImporter:
       name: ShipUI_FrameBG
       rect:
         serializedVersion: 2
-        x: 223
-        y: 67
+        x: 216
+        y: 238
         width: 144
         height: 143
       alignment: 0
@@ -373,28 +373,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShipUI_FramePattern
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 66
-        width: 144
-        height: 142
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f644f6c8882f37aa0800000000000000
-      internalID: -6164316796654500753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ShipUI_Screw
       rect:
         serializedVersion: 2
@@ -403,7 +381,7 @@ TextureImporter:
         width: 21
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,6 +390,358 @@ TextureImporter:
       bones: []
       spriteID: a32dc96b1cb5c8044aa205cbc7a64fec
       internalID: 1914893547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_ShipFilled
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 105
+        width: 463
+        height: 209
+      alignment: 9
+      pivot: {x: 0.55293095, y: 0.34807277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5caad1ec07e21484d8ee96d68e36c67d
+      internalID: -163739240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Line
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 647
+        width: 13
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faf195c8d677f84ab4b5b388c70980b
+      internalID: 2145827279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_DotLine
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 646
+        width: 14
+        height: 39
+      alignment: 9
+      pivot: {x: 0.51391166, y: 0.18542637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cef62f5eedde540b4a382c063cf83a
+      internalID: 1322091711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Degree
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 709
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66dd0e7e6326948489961df7aa09a3b9
+      internalID: -1198703734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_SonarDot
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 705
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfb1f3f04f58c143b9616839c431d2e
+      internalID: 1520691344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Brackets
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 665
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 15, z: 15, w: 13}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e51907281297b428934eb22de5fca5
+      internalID: -1201640186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Warning
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 670
+        width: 75
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e5630ea1db4c548a6f183535170d4c
+      internalID: -453908349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Question
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 667
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bfb63fb58b24247b81f375d815c80c
+      internalID: -1084022081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Exclamation
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 668
+        width: 10
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ad222c8d4abbc47b47eb745e550eb5
+      internalID: -1470116851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_CornerFrame1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 39
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 67, z: 65, w: 65}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c60406fc652da46bab648e7f25d62f
+      internalID: -1990893143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_CornerFrame2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 38
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 39, z: 38, w: 37}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b26781cd21a5a47af36dea4fd8caee
+      internalID: -1839117833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_CornerFrame3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 38
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 39, z: 38, w: 37}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6430655da4dda4e812e51bc8c28f91
+      internalID: 1433582227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Scre
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 474
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec9a6f50b2c8024aa2cbb1308848979
+      internalID: -82535298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Temperature
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 444
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca95ac1f6b6e9164988a3d8fa632ad7a
+      internalID: -1023914395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_DepthIndicator
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 486
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a64f356ee5d3043869c0f4de6e82f0
+      internalID: 1425199009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI_Cross
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 294
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696d1cf59ea5a04489553ad8fc15588e
+      internalID: 1655868344
       vertices: []
       indices: 
       edges: []
@@ -430,7 +760,6 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ShipUI_0: -6126666271773055391
       ShipUI_10: 2765940450055194423
       ShipUI_11: -8891637228337298032
       ShipUI_12: -3305127161889780283
@@ -448,15 +777,32 @@ TextureImporter:
       ShipUI_8: 1072577757231220042
       ShipUI_9: 5619592702249903972
       ShipUI_Beacon: -831790681302326914
+      ShipUI_Brackets: -1201640186
+      ShipUI_CornerFrame1: -1990893143
+      ShipUI_CornerFrame2: -1839117833
+      ShipUI_CornerFrame3: 1433582227
+      ShipUI_Cross: 1655868344
+      ShipUI_Degree: -1198703734
+      ShipUI_DepthIndicator: 1425199009
+      ShipUI_DotLine: 1322091711
       ShipUI_Energy: 4893101437600982109
       ShipUI_Engine: -2200811636152642389
+      ShipUI_Exclamation: -1470116851
       ShipUI_Frame: -9115882700862648990
       ShipUI_FrameBG: 4988261925576480469
       ShipUI_FramePattern: -6164316796654500753
+      ShipUI_FrameSmall: -6126666271773055391
+      ShipUI_Line: 2145827279
+      ShipUI_Question: -1084022081
+      ShipUI_Scre: -82535298
       ShipUI_Screw: 1914893547
-      ShipUI_Ship: 3604556537987565048
+      ShipUI_ShipFilled: -163739240
+      ShipUI_ShipOutline: 3604556537987565048
+      ShipUI_SonarDot: 1520691344
       ShipUI_SonarListen: 5987587157867648896
       ShipUI_SonarSend: 8436352861879236814
+      ShipUI_Temperature: -1023914395
+      ShipUI_Warning: -453908349
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
