@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: 8ca89bd0a33f43a43a57d6dab057534c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1341410221829596448
+    second: ShipUI2_0
+  - first:
+      213: -5734450094761770230
+    second: ShipUI2_1
+  - first:
+      213: -6751952648062190352
+    second: ShipUI2_2
+  - first:
+      213: -2848160806851457976
+    second: ShipUI2_3
+  - first:
+      213: 1990209135593831588
+    second: ShipUI2_4
+  - first:
+      213: -5956386736615106020
+    second: ShipUI2_5
+  - first:
+      213: -3695741695581230799
+    second: ShipUI2_6
+  - first:
+      213: -8776602591912229234
+    second: ShipUI2_7
+  - first:
+      213: 4505375081686848510
+    second: ShipUI2_8
+  - first:
+      213: 205629708409536453
+    second: ShipUI2_9
+  - first:
+      213: 673143614821356459
+    second: ShipUI2_10
+  - first:
+      213: 3788850816378440786
+    second: ShipUI2_11
+  - first:
+      213: 1152964663512956886
+    second: ShipUI2_12
+  - first:
+      213: -8584164420083033257
+    second: ShipUI2_13
+  - first:
+      213: -8121105271012983590
+    second: ShipUI2_14
+  - first:
+      213: 5761539459689082698
+    second: ShipUI2_15
+  - first:
+      213: 4787768390095676659
+    second: ShipUI2_16
+  - first:
+      213: 405132268694616310
+    second: ShipUI2_17
+  - first:
+      213: 1120181184042513723
+    second: ShipUI2_18
+  - first:
+      213: -2454729291962420280
+    second: ShipUI2_19
+  - first:
+      213: -5686912218107718474
+    second: ShipUI2_20
+  - first:
+      213: -2193544411138466119
+    second: ShipUI2_21
+  - first:
+      213: 3748489326616417680
+    second: ShipUI2_22
+  - first:
+      213: 3721309809642861831
+    second: ShipUI2_23
+  - first:
+      213: -5953621582736597935
+    second: ShipUI2_24
+  - first:
+      213: -4056231538784202062
+    second: ShipUI2_25
+  - first:
+      213: 6913826167750655751
+    second: ShipUI2_26
+  - first:
+      213: -150606900990621719
+    second: ShipUI2_27
+  - first:
+      213: 1789785848544679310
+    second: ShipUI2_28
+  - first:
+      213: -2879348032531839606
+    second: ShipUI2_29
+  - first:
+      213: 5941788631391928773
+    second: ShipUI2_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShipUI2_Exclamation
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 289
+        width: 19
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ead4c5a28a526de0800000000000000
+      internalID: -1341410221829596448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_SonarListen
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 252
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acbecb0aa4ae9b10800000000000000
+      internalID: 1990209135593831588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_Cross
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 290
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf740d512b8ad200800000000000000
+      internalID: 205629708409536453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_LineVertical
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 269
+        width: 8
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3df3c1d8c775900800000000000000
+      internalID: 673143614821356459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_SonarSend
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 252
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b5767d0fbeed880800000000000000
+      internalID: -8584164420083033257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_DotLine
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 268
+        width: 14
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcf7b198c90c4f80800000000000000
+      internalID: -8121105271012983590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_Triangle
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 184
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f83792e6a15f9500800000000000000
+      internalID: 405132268694616310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_LineHorizontal
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 202
+        width: 174
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be5c0fdaf6fe81e0800000000000000
+      internalID: -2193544411138466119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_SnoarDot
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 72
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ff39fb448d2ff50800000000000000
+      internalID: 6913826167750655751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_DepthIndicator
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 41
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c102908749757250800000000000000
+      internalID: 5941788631391928773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_Beacon
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 130
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e8be638617e8442a1789383659da3d
+      internalID: -1141512369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_Engine
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 135
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c6bc38410ec9e4baa7ee54387f96d4
+      internalID: 270353713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_Question
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 286
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebd6b4a2f65d5a43b8468c46d30b932
+      internalID: 1415247606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_EngineShutdown
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 256
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030d23873dee4fd4baf41f736339e1b8
+      internalID: -965355190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 243462fe40726b74e901bf44a40843b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShipUI2_1: -5734450094761770230
+      ShipUI2_11: 3788850816378440786
+      ShipUI2_12: 1152964663512956886
+      ShipUI2_15: 5761539459689082698
+      ShipUI2_16: 4787768390095676659
+      ShipUI2_18: 1120181184042513723
+      ShipUI2_19: -2454729291962420280
+      ShipUI2_2: -6751952648062190352
+      ShipUI2_20: -5686912218107718474
+      ShipUI2_22: 3748489326616417680
+      ShipUI2_23: 3721309809642861831
+      ShipUI2_24: -5953621582736597935
+      ShipUI2_25: -4056231538784202062
+      ShipUI2_27: -150606900990621719
+      ShipUI2_28: 1789785848544679310
+      ShipUI2_29: -2879348032531839606
+      ShipUI2_3: -2848160806851457976
+      ShipUI2_31: 1595477477
+      ShipUI2_5: -5956386736615106020
+      ShipUI2_6: -3695741695581230799
+      ShipUI2_7: -8776602591912229234
+      ShipUI2_8: 4505375081686848510
+      ShipUI2_Beacon: -1141512369
+      ShipUI2_Cross: 205629708409536453
+      ShipUI2_DepthIndicator: 5941788631391928773
+      ShipUI2_DotLine: -8121105271012983590
+      ShipUI2_Engine: 270353713
+      ShipUI2_EngineShutdown: -965355190
+      ShipUI2_Exclamation: -1341410221829596448
+      ShipUI2_LineHorizontal: -2193544411138466119
+      ShipUI2_LineVertical: 673143614821356459
+      ShipUI2_Question: 1415247606
+      ShipUI2_SnoarDot: 6913826167750655751
+      ShipUI2_SonarListen: 1990209135593831588
+      ShipUI2_SonarSend: -8584164420083033257
+      ShipUI2_Triangle: 405132268694616310
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 321e19a1c9cf1b843be35ab90f8eafa2
+guid: d540a352800b9554db0e843f1e152982
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7390099433446651325
-    second: Frame1BG_0
+      213: -9183082768876040550
+    second: CornerStoneDots1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame1BG_0
+      name: CornerStoneDots1_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 17
-        width: 213
-        height: 211
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34ac89e38b7117990800000000000000
-      internalID: -7390099433446651325
+      spriteID: a9e022230e22f8080800000000000000
+      internalID: -9183082768876040550
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame1BG_0: -7390099433446651325
+      CornerStoneDots1_0: -9183082768876040550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

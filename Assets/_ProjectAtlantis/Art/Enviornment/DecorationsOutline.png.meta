@@ -1,0 +1,539 @@
+fileFormatVersion: 2
+guid: b03baca26f96a0a409c3d1d9e6bc1053
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9153933638802226913
+    second: DecorationsOutline_0
+  - first:
+      213: 2724934404597095682
+    second: DecorationsOutline_1
+  - first:
+      213: 2969180754018333636
+    second: DecorationsOutline_2
+  - first:
+      213: -403575400037596238
+    second: DecorationsOutline_3
+  - first:
+      213: 3326276936103640615
+    second: DecorationsOutline_4
+  - first:
+      213: 514712979829972055
+    second: DecorationsOutline_5
+  - first:
+      213: 4564499604614921492
+    second: DecorationsOutline_6
+  - first:
+      213: -7978097873134193754
+    second: DecorationsOutline_7
+  - first:
+      213: -8679468805951539228
+    second: DecorationsOutline_8
+  - first:
+      213: -4492641951106118096
+    second: DecorationsOutline_9
+  - first:
+      213: 4912810812024287984
+    second: DecorationsOutline_10
+  - first:
+      213: -6579634409263224883
+    second: DecorationsOutline_11
+  - first:
+      213: -3366763483668298143
+    second: DecorationsOutline_12
+  - first:
+      213: -8081379875507481566
+    second: DecorationsOutline_13
+  - first:
+      213: -9132258876390811935
+    second: DecorationsOutline_14
+  - first:
+      213: -7127906138520625523
+    second: DecorationsOutline_15
+  - first:
+      213: -2783294833736725611
+    second: DecorationsOutline_16
+  - first:
+      213: 1556803723583227794
+    second: DecorationsOutline_17
+  - first:
+      213: 9095662021302642346
+    second: DecorationsOutline_18
+  - first:
+      213: -1766811756519540368
+    second: DecorationsOutline_19
+  - first:
+      213: 3464915252736797068
+    second: DecorationsOutline_20
+  - first:
+      213: 3730733744687989221
+    second: DecorationsOutline_21
+  - first:
+      213: -3302639320069892895
+    second: DecorationsOutline_22
+  - first:
+      213: 9192186637273360574
+    second: DecorationsOutline_23
+  - first:
+      213: 3414111099516509730
+    second: DecorationsOutline_24
+  - first:
+      213: -5051550041618362234
+    second: DecorationsOutline_25
+  - first:
+      213: 6375360541091516915
+    second: DecorationsOutline_26
+  - first:
+      213: 4764668994561993296
+    second: DecorationsOutline_27
+  - first:
+      213: 7406179461721911768
+    second: DecorationsOutline_28
+  - first:
+      213: -6291412993106361222
+    second: DecorationsOutline_29
+  - first:
+      213: 7756735145526499621
+    second: DecorationsOutline_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DecorationsOutline_Statue
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 539
+        width: 93
+        height: 236
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -34.5, y: 63}
+        - {x: -27.5, y: 45}
+        - {x: -41.5, y: 31}
+        - {x: -45.5, y: -11}
+        - {x: -34.5, y: -49}
+        - {x: -31.5, y: -80}
+        - {x: -44.5, y: -116}
+        - {x: 28.5, y: -112}
+        - {x: 11.5, y: -69}
+        - {x: 16.806122, y: 22.382996}
+        - {x: 43.5, y: 60}
+        - {x: 41.5, y: 117}
+        - {x: 28.5, y: 112}
+        - {x: 29.5, y: 72}
+        - {x: 0.5, y: 52}
+        - {x: -11.5, y: 83}
+        - {x: -32.5, y: 86}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee3e46152e490f70800000000000000
+      internalID: 9153933638802226913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_Letters
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 573
+        width: 164
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d10465769e0d520800000000000000
+      internalID: 2724934404597095682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_PillarBaseSmall
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 471
+        width: 85
+        height: 101
+      alignment: 9
+      pivot: {x: 0.51058584, y: 0.04567152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a37980114a184190800000000000000
+      internalID: -7978097873134193754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_Spikes
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 292
+        width: 141
+        height: 233
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -33.5, y: -78.5}
+        - {x: -69.5, y: -23.5}
+        - {x: -50.5, y: -113.5}
+        - {x: 37.5, y: -114.5}
+        - {x: 67.5, y: -18.5}
+        - {x: 24.5, y: -72.5}
+        - {x: 23.5, y: 113.5}
+        - {x: -6.5, y: -40.5}
+        - {x: -37.5, y: 66.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7bc265b155c8780800000000000000
+      internalID: -8679468805951539228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_Spike
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 302
+        width: 48
+        height: 192
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e4d41d2fde6a1c0800000000000000
+      internalID: -4492641951106118096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_PillarBase
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 289
+        width: 301
+        height: 174
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -106.5, y: -30}
+        - {x: -131.5, y: -31}
+        - {x: -131.5, y: -52}
+        - {x: -149.5, y: -52}
+        - {x: -149.5, y: -86}
+        - {x: 149.5, y: -86}
+        - {x: 148.5, y: -51}
+        - {x: 130.5, y: -49}
+        - {x: 129.5, y: -30}
+        - {x: 109.5, y: -30}
+        - {x: 107.5, y: 85}
+        - {x: -107.5, y: 85}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2f763876fcd2440800000000000000
+      internalID: 4912810812024287984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_SmallPillar
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 37
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7adeb7d5170b4a0800000000000000
+      internalID: -6579634409263224883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_StoneMid
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 184
+        width: 78
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -37, y: 0}
+        - {x: -33, y: -25}
+        - {x: -7, y: -29}
+        - {x: 36, y: -26}
+        - {x: 35, y: -8}
+        - {x: 17, y: 29}
+        - {x: -12, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166c131137ad641d0800000000000000
+      internalID: -3366763483668298143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_StoneSmall
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 127
+        width: 90
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ed62dd127941d90800000000000000
+      internalID: -7127906138520625523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_StoneBig
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 28
+        width: 139
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d17ab61bf808c660800000000000000
+      internalID: 7406179461721911768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorationsOutline_Face
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 48
+        width: 234
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -103, y: -14}
+        - {x: -109, y: -58}
+        - {x: 108, y: -62}
+        - {x: 107, y: -20}
+        - {x: 76, y: -5}
+        - {x: 51, y: 28}
+        - {x: 9, y: 57}
+        - {x: -49, y: 59}
+        - {x: -96, y: 28}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4402f4f7021c0c440ab84f1f18b0bd11
+      internalID: -483359467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 538494b6078346046980415a94cdfe90
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DecorationsOutline_13: -8081379875507481566
+      DecorationsOutline_14: -9132258876390811935
+      DecorationsOutline_16: -2783294833736725611
+      DecorationsOutline_17: 1556803723583227794
+      DecorationsOutline_18: 9095662021302642346
+      DecorationsOutline_19: -1766811756519540368
+      DecorationsOutline_2: 2969180754018333636
+      DecorationsOutline_20: 3464915252736797068
+      DecorationsOutline_21: 3730733744687989221
+      DecorationsOutline_22: -3302639320069892895
+      DecorationsOutline_23: 9192186637273360574
+      DecorationsOutline_24: 3414111099516509730
+      DecorationsOutline_25: -5051550041618362234
+      DecorationsOutline_26: 6375360541091516915
+      DecorationsOutline_27: 4764668994561993296
+      DecorationsOutline_29: -6291412993106361222
+      DecorationsOutline_3: -403575400037596238
+      DecorationsOutline_30: 7756735145526499621
+      DecorationsOutline_31: 203130120
+      DecorationsOutline_4: 3326276936103640615
+      DecorationsOutline_5: 514712979829972055
+      DecorationsOutline_6: 4564499604614921492
+      DecorationsOutline_Face: -483359467
+      DecorationsOutline_Letters: 2724934404597095682
+      DecorationsOutline_PillarBase: 4912810812024287984
+      DecorationsOutline_PillarBaseSmall: -7978097873134193754
+      DecorationsOutline_SmallPillar: -6579634409263224883
+      DecorationsOutline_Spike: -4492641951106118096
+      DecorationsOutline_Spikes: -8679468805951539228
+      DecorationsOutline_Statue: 9153933638802226913
+      DecorationsOutline_StoneBig: 7406179461721911768
+      DecorationsOutline_StoneMid: -3366763483668298143
+      DecorationsOutline_StoneSmall: -7127906138520625523
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

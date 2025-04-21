@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 0c499da50f122a341aedda104d2c2978
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9210160251398776014
+    second: AlienColumnDots4_0
+  - first:
+      213: 3084852250671059723
+    second: AlienColumnDots4_1
+  - first:
+      213: 882134880199426361
+    second: AlienColumnDots4_2
+  - first:
+      213: 8657271244047328056
+    second: AlienColumnDots4_3
+  - first:
+      213: -4625734675379404037
+    second: AlienColumnDots4_4
+  - first:
+      213: 2813563207554562397
+    second: AlienColumnDots4_5
+  - first:
+      213: 7071438783297698266
+    second: AlienColumnDots4_6
+  - first:
+      213: -8142612866857999729
+    second: AlienColumnDots4_7
+  - first:
+      213: 1516496646105521680
+    second: AlienColumnDots4_8
+  - first:
+      213: -625582206135007055
+    second: AlienColumnDots4_9
+  - first:
+      213: -2018967875464688635
+    second: AlienColumnDots4_10
+  - first:
+      213: -98473821856010104
+    second: AlienColumnDots4_11
+  - first:
+      213: 5843277335687114667
+    second: AlienColumnDots4_12
+  - first:
+      213: -2378822708146148119
+    second: AlienColumnDots4_13
+  - first:
+      213: 4810167537990828513
+    second: AlienColumnDots4_14
+  - first:
+      213: -2330777203154077720
+    second: AlienColumnDots4_15
+  - first:
+      213: -8618600287301369927
+    second: AlienColumnDots4_16
+  - first:
+      213: 4891402610965329282
+    second: AlienColumnDots4_17
+  - first:
+      213: -609519679955023930
+    second: AlienColumnDots4_18
+  - first:
+      213: 8958015564671152096
+    second: AlienColumnDots4_19
+  - first:
+      213: 4358130248525665216
+    second: AlienColumnDots4_20
+  - first:
+      213: 6337585827238928451
+    second: AlienColumnDots4_21
+  - first:
+      213: -182196536934458602
+    second: AlienColumnDots4_22
+  - first:
+      213: 1811471117330220668
+    second: AlienColumnDots4_23
+  - first:
+      213: 2828247807040581735
+    second: AlienColumnDots4_24
+  - first:
+      213: 5919329458513997516
+    second: AlienColumnDots4_25
+  - first:
+      213: -211696941338750361
+    second: AlienColumnDots4_26
+  - first:
+      213: -3766396672030084593
+    second: AlienColumnDots4_27
+  - first:
+      213: 8600080083295450641
+    second: AlienColumnDots4_28
+  - first:
+      213: 7280446676870564011
+    second: AlienColumnDots4_29
+  - first:
+      213: -3410494105986285382
+    second: AlienColumnDots4_30
+  - first:
+      213: 7324090470841528057
+    second: AlienColumnDots4_31
+  - first:
+      213: -9126646975042456101
+    second: AlienColumnDots4_32
+  - first:
+      213: -9197575645288579106
+    second: AlienColumnDots4_33
+  - first:
+      213: -3044705477333968519
+    second: AlienColumnDots4_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlienColumnDots4_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 188
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4eb0d73ff01df70800000000000000
+      internalID: 9210160251398776014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 31
+        width: 31
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0310d917c89fca20800000000000000
+      internalID: 3084852250671059723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 130
+        width: 8
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931c442fff8fd3c00800000000000000
+      internalID: 882134880199426361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 185
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83325a9045ec42870800000000000000
+      internalID: 8657271244047328056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 36
+        width: 31
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2cdc822d61ecfb0800000000000000
+      internalID: -4625734675379404037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 167
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59f56394d8cb0720800000000000000
+      internalID: 2813563207554562397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 155
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad931697b1cc22260800000000000000
+      internalID: 7071438783297698266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 143
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82676f2db0affe80800000000000000
+      internalID: -8142612866857999729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 124
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ed0363aadab0510800000000000000
+      internalID: 1516496646105521680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 76
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b884894c4c7157f0800000000000000
+      internalID: -625582206135007055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 58
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c800a0a6f2bf3e0800000000000000
+      internalID: -2018967875464688635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 62
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880f89ca49622aef0800000000000000
+      internalID: -98473821856010104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 45
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafa8bd17cd771150800000000000000
+      internalID: 5843277335687114667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 51
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ece059b959bcfed0800000000000000
+      internalID: -2378822708146148119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 48
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e10f04f3e521c240800000000000000
+      internalID: 4810167537990828513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 35
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e73c639b7a67afd0800000000000000
+      internalID: -2330777203154077720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_16
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 7
+        width: 58
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf7256b3b4946880800000000000000
+      internalID: -8618600287301369927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 25
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285b10842c0c1e340800000000000000
+      internalID: 4891402610965329282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_18
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 36
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7cba8941d8a87f0800000000000000
+      internalID: -609519679955023930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_19
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 17
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efe4a8c1b3415c70800000000000000
+      internalID: 8958015564671152096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 25
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3d144ee503b7c30800000000000000
+      internalID: 4358130248525665216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 25
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340602e5bb0a3f750800000000000000
+      internalID: 6337585827238928451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_22
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 25
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b17b80735b87df0800000000000000
+      internalID: -182196536934458602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 18
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7609553263a32910800000000000000
+      internalID: 1811471117330220668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_24
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 18
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7607e635564ff3720800000000000000
+      internalID: 2828247807040581735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_25
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 9
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce6b33d7cea52250800000000000000
+      internalID: 5919329458513997516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_26
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 6
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7629773e0c6ef0df0800000000000000
+      internalID: -211696941338750361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_27
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 6
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02fe689e221bbbc0800000000000000
+      internalID: -3766396672030084593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116bcb4454f995770800000000000000
+      internalID: 8600080083295450641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_29
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 7
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba80b0ddda7590560800000000000000
+      internalID: 7280446676870564011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 7
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0cf102ead7ba0d0800000000000000
+      internalID: -3410494105986285382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 6
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe25518a7564a560800000000000000
+      internalID: 7324090470841528057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_32
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 6
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd573366ee2a75180800000000000000
+      internalID: -9126646975042456101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_33
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf3ac37ea5ab5080800000000000000
+      internalID: -9197575645288579106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienColumnDots4_34
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97992d9ff780fb5d0800000000000000
+      internalID: -3044705477333968519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AlienColumnDots4_0: 9210160251398776014
+      AlienColumnDots4_1: 3084852250671059723
+      AlienColumnDots4_10: -2018967875464688635
+      AlienColumnDots4_11: -98473821856010104
+      AlienColumnDots4_12: 5843277335687114667
+      AlienColumnDots4_13: -2378822708146148119
+      AlienColumnDots4_14: 4810167537990828513
+      AlienColumnDots4_15: -2330777203154077720
+      AlienColumnDots4_16: -8618600287301369927
+      AlienColumnDots4_17: 4891402610965329282
+      AlienColumnDots4_18: -609519679955023930
+      AlienColumnDots4_19: 8958015564671152096
+      AlienColumnDots4_2: 882134880199426361
+      AlienColumnDots4_20: 4358130248525665216
+      AlienColumnDots4_21: 6337585827238928451
+      AlienColumnDots4_22: -182196536934458602
+      AlienColumnDots4_23: 1811471117330220668
+      AlienColumnDots4_24: 2828247807040581735
+      AlienColumnDots4_25: 5919329458513997516
+      AlienColumnDots4_26: -211696941338750361
+      AlienColumnDots4_27: -3766396672030084593
+      AlienColumnDots4_28: 8600080083295450641
+      AlienColumnDots4_29: 7280446676870564011
+      AlienColumnDots4_3: 8657271244047328056
+      AlienColumnDots4_30: -3410494105986285382
+      AlienColumnDots4_31: 7324090470841528057
+      AlienColumnDots4_32: -9126646975042456101
+      AlienColumnDots4_33: -9197575645288579106
+      AlienColumnDots4_34: -3044705477333968519
+      AlienColumnDots4_4: -4625734675379404037
+      AlienColumnDots4_5: 2813563207554562397
+      AlienColumnDots4_6: 7071438783297698266
+      AlienColumnDots4_7: -8142612866857999729
+      AlienColumnDots4_8: 1516496646105521680
+      AlienColumnDots4_9: -625582206135007055
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

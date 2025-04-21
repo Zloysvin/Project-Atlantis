@@ -1,10 +1,43 @@
 fileFormatVersion: 2
-guid: 321e19a1c9cf1b843be35ab90f8eafa2
+guid: f9c0dcdad9762254984ba8ef57795f89
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7390099433446651325
-    second: Frame1BG_0
+      213: 3093703340886035799
+    second: MonsterHeadDots_0
+  - first:
+      213: 7991587469475872310
+    second: MonsterHeadDots_1
+  - first:
+      213: 4493254550814365370
+    second: MonsterHeadDots_2
+  - first:
+      213: 1764694375798599246
+    second: MonsterHeadDots_3
+  - first:
+      213: 7358426114939796180
+    second: MonsterHeadDots_4
+  - first:
+      213: 5459343664074044953
+    second: MonsterHeadDots_5
+  - first:
+      213: -883379480384955581
+    second: MonsterHeadDots_6
+  - first:
+      213: -7183624021614475927
+    second: MonsterHeadDots_7
+  - first:
+      213: 5745401794151139627
+    second: MonsterHeadDots_8
+  - first:
+      213: 389315189752804319
+    second: MonsterHeadDots_9
+  - first:
+      213: -2402432320217890623
+    second: MonsterHeadDots_10
+  - first:
+      213: 1578873487222078105
+    second: MonsterHeadDots_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame1BG_0
+      name: MonsterHeadDots_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 17
-        width: 213
-        height: 211
+        x: 12
+        y: 7
+        width: 111
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +148,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34ac89e38b7117990800000000000000
-      internalID: -7390099433446651325
+      spriteID: 75d83f12cca0fea20800000000000000
+      internalID: 3093703340886035799
       vertices: []
       indices: 
       edges: []
@@ -125,7 +158,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7eb4052a3bb5b4e458ed8fee51ca348e
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +168,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame1BG_0: -7390099433446651325
+      MonsterHeadDots_0: 3093703340886035799
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

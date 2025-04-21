@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 7abad8a8a7c63b14093cdf53af57fc04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3309071092015323143
+    second: OceanWall2_0
+  - first:
+      213: 6211062769153772934
+    second: OceanWall2_1
+  - first:
+      213: 6749726050131572004
+    second: OceanWall2_2
+  - first:
+      213: 6006482929068938687
+    second: OceanWall2_3
+  - first:
+      213: 3968436459289842758
+    second: OceanWall2_4
+  - first:
+      213: -7045921311721918586
+    second: OceanWall2_5
+  - first:
+      213: -3315801641427477568
+    second: OceanWall2_6
+  - first:
+      213: 1160214122229555761
+    second: OceanWall2_7
+  - first:
+      213: 5620322286977990133
+    second: OceanWall2_8
+  - first:
+      213: 142406651024443843
+    second: OceanWall2_9
+  - first:
+      213: 5711152775384407908
+    second: OceanWall2_10
+  - first:
+      213: 4188269416763792440
+    second: OceanWall2_11
+  - first:
+      213: 8813223851324322542
+    second: OceanWall2_12
+  - first:
+      213: 5096315414213946730
+    second: OceanWall2_13
+  - first:
+      213: -9076344804614268333
+    second: OceanWall2_14
+  - first:
+      213: 382245961996269430
+    second: OceanWall2_15
+  - first:
+      213: -8642823500820146153
+    second: OceanWall2_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OceanWall2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 512
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7a9efbf51d312d0800000000000000
+      internalID: -3309071092015323143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 74
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d80115ea0223650800000000000000
+      internalID: 6211062769153772934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 75
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425fa4db418dbad50800000000000000
+      internalID: 6749726050131572004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 72
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb51a9876605b5350800000000000000
+      internalID: 6006482929068938687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 78
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6441ead1fe7b21730800000000000000
+      internalID: 3968436459289842758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 65
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fe57bd5ebd73e90800000000000000
+      internalID: -7045921311721918586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 62
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbde0999f7ebf1d0800000000000000
+      internalID: -3315801641427477568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 58
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13262ead898e91010800000000000000
+      internalID: 1160214122229555761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_8
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 52
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdb88e97556ffd40800000000000000
+      internalID: 5620322286977990133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 47
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c907f7381ee9f100800000000000000
+      internalID: 142406651024443843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_10
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 84
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f16c2b037124f40800000000000000
+      internalID: 5711152775384407908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_11
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 82
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c96d918d8bf1a30800000000000000
+      internalID: 4188269416763792440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_12
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 45
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2bf28f56cde4a70800000000000000
+      internalID: 8813223851324322542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 48
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6de1972edfb9b640800000000000000
+      internalID: 5096315414213946730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_14
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 49
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a110e1d785a0280800000000000000
+      internalID: -9076344804614268333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 49
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6777d9d5da20e4500800000000000000
+      internalID: 382245961996269430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWall2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 512
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718973151d58e0880800000000000000
+      internalID: -8642823500820146153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      OceanWall2_0: -3309071092015323143
+      OceanWall2_1: 6211062769153772934
+      OceanWall2_10: 5711152775384407908
+      OceanWall2_11: 4188269416763792440
+      OceanWall2_12: 8813223851324322542
+      OceanWall2_13: 5096315414213946730
+      OceanWall2_14: -9076344804614268333
+      OceanWall2_15: 382245961996269430
+      OceanWall2_16: -8642823500820146153
+      OceanWall2_2: 6749726050131572004
+      OceanWall2_3: 6006482929068938687
+      OceanWall2_4: 3968436459289842758
+      OceanWall2_5: -7045921311721918586
+      OceanWall2_6: -3315801641427477568
+      OceanWall2_7: 1160214122229555761
+      OceanWall2_8: 5620322286977990133
+      OceanWall2_9: 142406651024443843
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

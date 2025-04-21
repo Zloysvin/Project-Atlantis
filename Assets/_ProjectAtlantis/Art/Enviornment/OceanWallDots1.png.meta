@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 18cd9fc41d9cee5408bd53dd9a5229be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4309672811974982075
+    second: OceanWallDots1_0
+  - first:
+      213: 1617016461912539423
+    second: OceanWallDots1_1
+  - first:
+      213: -7951555534952834928
+    second: OceanWallDots1_2
+  - first:
+      213: -2693029048568148715
+    second: OceanWallDots1_3
+  - first:
+      213: 887990187764806672
+    second: OceanWallDots1_4
+  - first:
+      213: -7725270323016530599
+    second: OceanWallDots1_5
+  - first:
+      213: -8467635266612346883
+    second: OceanWallDots1_6
+  - first:
+      213: 6000076603829362831
+    second: OceanWallDots1_7
+  - first:
+      213: -3323108924826184631
+    second: OceanWallDots1_8
+  - first:
+      213: -3896430937938328658
+    second: OceanWallDots1_9
+  - first:
+      213: 5857828368420917344
+    second: OceanWallDots1_10
+  - first:
+      213: 1963610629659058163
+    second: OceanWallDots1_11
+  - first:
+      213: 2855604984795663491
+    second: OceanWallDots1_12
+  - first:
+      213: 5421162781686629635
+    second: OceanWallDots1_13
+  - first:
+      213: 4690904562484099788
+    second: OceanWallDots1_14
+  - first:
+      213: -6374442702770583185
+    second: OceanWallDots1_15
+  - first:
+      213: -6893716237519371367
+    second: OceanWallDots1_16
+  - first:
+      213: 2420298263332423354
+    second: OceanWallDots1_17
+  - first:
+      213: -2230997899068671835
+    second: OceanWallDots1_18
+  - first:
+      213: -5126875625690573394
+    second: OceanWallDots1_19
+  - first:
+      213: 5131072658163502305
+    second: OceanWallDots1_20
+  - first:
+      213: 3139390340313981604
+    second: OceanWallDots1_21
+  - first:
+      213: 5539280675951990013
+    second: OceanWallDots1_22
+  - first:
+      213: 7518706053650052077
+    second: OceanWallDots1_23
+  - first:
+      213: -4588774072657438670
+    second: OceanWallDots1_24
+  - first:
+      213: 5494522986816406431
+    second: OceanWallDots1_25
+  - first:
+      213: 4637230638516697835
+    second: OceanWallDots1_26
+  - first:
+      213: 4687641759152916905
+    second: OceanWallDots1_27
+  - first:
+      213: -7514814443808306040
+    second: OceanWallDots1_28
+  - first:
+      213: 3567884789875949240
+    second: OceanWallDots1_29
+  - first:
+      213: 3232791147040404642
+    second: OceanWallDots1_30
+  - first:
+      213: 851345759868015395
+    second: OceanWallDots1_31
+  - first:
+      213: -4083002745523396485
+    second: OceanWallDots1_32
+  - first:
+      213: 948657878447879801
+    second: OceanWallDots1_33
+  - first:
+      213: -1559949136949037367
+    second: OceanWallDots1_34
+  - first:
+      213: 8103956829110749876
+    second: OceanWallDots1_35
+  - first:
+      213: -4251708764297099344
+    second: OceanWallDots1_36
+  - first:
+      213: 2375083029599086170
+    second: OceanWallDots1_37
+  - first:
+      213: 8257247023543561913
+    second: OceanWallDots1_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OceanWallDots1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb97defb6980fcb30800000000000000
+      internalID: 4309672811974982075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 51
+        width: 62
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f118140a7ebc07610800000000000000
+      internalID: 1617016461912539423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 51
+        width: 84
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098585fbe5666a190800000000000000
+      internalID: -7951555534952834928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 25
+        width: 144
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d894e395070aad0800000000000000
+      internalID: -2693029048568148715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 86
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014f0c9fe56c25c00800000000000000
+      internalID: 887990187764806672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 104
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9558bba42935ac490800000000000000
+      internalID: -7725270323016530599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_6
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 38
+        width: 76
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff3006a69aec7a80800000000000000
+      internalID: -8467635266612346883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 104
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80a164a1ed844350800000000000000
+      internalID: 6000076603829362831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_8
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 100
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9441ec91a02f1e1d0800000000000000
+      internalID: -3323108924826184631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_9
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 108
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea30854c4b81de9c0800000000000000
+      internalID: -3896430937938328658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 38
+        width: 79
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0605fee6ddf2b4150800000000000000
+      internalID: 5857828368420917344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_11
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 109
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff520ac675204b10800000000000000
+      internalID: 1963610629659058163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_12
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 90
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c8491aa9521a720800000000000000
+      internalID: 2855604984795663491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_13
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 101
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3050000d3d6db3b40800000000000000
+      internalID: 5421162781686629635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_14
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccabf1a98d0791140800000000000000
+      internalID: 4690904562484099788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_15
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 103
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f694744922e6987a0800000000000000
+      internalID: -6374442702770583185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_16
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 87
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993c0504b999450a0800000000000000
+      internalID: -6893716237519371367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_17
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 33
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab68c6c7270a69120800000000000000
+      internalID: 2420298263332423354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_18
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 100
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a87e5b2b37e901e0800000000000000
+      internalID: -2230997899068671835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 67
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5da1328cda9d8b0800000000000000
+      internalID: -5126875625690573394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_20
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 88
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec0e82a56b353740800000000000000
+      internalID: 5131072658163502305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_21
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 100
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a225bd91ea519b20800000000000000
+      internalID: 3139390340313981604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_22
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 90
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4dd492d6a7fdc40800000000000000
+      internalID: 5539280675951990013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_23
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 93
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3f36ae15fc75860800000000000000
+      internalID: 7518706053650052077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_24
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 88
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2381bb41b466150c0800000000000000
+      internalID: -4588774072657438670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_25
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 92
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9309679b87704c40800000000000000
+      internalID: 5494522986816406431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea785652b0ca5040800000000000000
+      internalID: 4637230638516697835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_27
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 82
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9c8900859dd0140800000000000000
+      internalID: 4687641759152916905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_28
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 76
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cc4db141406b790800000000000000
+      internalID: -7514814443808306040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_29
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 70
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be331c105ca38130800000000000000
+      internalID: 3567884789875949240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_30
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 88
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4fe509b6e2ddc20800000000000000
+      internalID: 3232791147040404642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_31
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 87
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323d7fd357690db00800000000000000
+      internalID: 851345759868015395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_32
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 51
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b702228b2a24657c0800000000000000
+      internalID: -4083002745523396485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_33
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 90
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976f242705f4a2d00800000000000000
+      internalID: 948657878447879801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_34
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 69
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6b9706682f95ae0800000000000000
+      internalID: -1559949136949037367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_35
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 59
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba4f3aacc9077070800000000000000
+      internalID: 8103956829110749876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_36
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 88
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b708a7c765eef4c0800000000000000
+      internalID: -4251708764297099344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_37
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 89
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56ef438e6df5f020800000000000000
+      internalID: 2375083029599086170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanWallDots1_38
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 52
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be27fc4b62a79270800000000000000
+      internalID: 8257247023543561913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      OceanWallDots1_0: 4309672811974982075
+      OceanWallDots1_1: 1617016461912539423
+      OceanWallDots1_10: 5857828368420917344
+      OceanWallDots1_11: 1963610629659058163
+      OceanWallDots1_12: 2855604984795663491
+      OceanWallDots1_13: 5421162781686629635
+      OceanWallDots1_14: 4690904562484099788
+      OceanWallDots1_15: -6374442702770583185
+      OceanWallDots1_16: -6893716237519371367
+      OceanWallDots1_17: 2420298263332423354
+      OceanWallDots1_18: -2230997899068671835
+      OceanWallDots1_19: -5126875625690573394
+      OceanWallDots1_2: -7951555534952834928
+      OceanWallDots1_20: 5131072658163502305
+      OceanWallDots1_21: 3139390340313981604
+      OceanWallDots1_22: 5539280675951990013
+      OceanWallDots1_23: 7518706053650052077
+      OceanWallDots1_24: -4588774072657438670
+      OceanWallDots1_25: 5494522986816406431
+      OceanWallDots1_26: 4637230638516697835
+      OceanWallDots1_27: 4687641759152916905
+      OceanWallDots1_28: -7514814443808306040
+      OceanWallDots1_29: 3567884789875949240
+      OceanWallDots1_3: -2693029048568148715
+      OceanWallDots1_30: 3232791147040404642
+      OceanWallDots1_31: 851345759868015395
+      OceanWallDots1_32: -4083002745523396485
+      OceanWallDots1_33: 948657878447879801
+      OceanWallDots1_34: -1559949136949037367
+      OceanWallDots1_35: 8103956829110749876
+      OceanWallDots1_36: -4251708764297099344
+      OceanWallDots1_37: 2375083029599086170
+      OceanWallDots1_38: 8257247023543561913
+      OceanWallDots1_4: 887990187764806672
+      OceanWallDots1_5: -7725270323016530599
+      OceanWallDots1_6: -8467635266612346883
+      OceanWallDots1_7: 6000076603829362831
+      OceanWallDots1_8: -3323108924826184631
+      OceanWallDots1_9: -3896430937938328658
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

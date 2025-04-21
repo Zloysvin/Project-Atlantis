@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: fbdbd7e030745134b93bfbe9a9e63099
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8078991142660233804
+    second: AlienWal2_0
+  - first:
+      213: -5001215863341427819
+    second: AlienWal2_1
+  - first:
+      213: 9029605277592274563
+    second: AlienWal2_2
+  - first:
+      213: 7670379963716236351
+    second: AlienWal2_3
+  - first:
+      213: -8155520831726813274
+    second: AlienWal2_4
+  - first:
+      213: 3828026819642000514
+    second: AlienWal2_5
+  - first:
+      213: 6849127920362207930
+    second: AlienWal2_6
+  - first:
+      213: 3868012526353373576
+    second: AlienWal2_7
+  - first:
+      213: 8662301399724176133
+    second: AlienWal2_8
+  - first:
+      213: -6577966824781863632
+    second: AlienWal2_9
+  - first:
+      213: 2648913799526225742
+    second: AlienWal2_10
+  - first:
+      213: -419960882174733313
+    second: AlienWal2_11
+  - first:
+      213: 3727447129059321416
+    second: AlienWal2_12
+  - first:
+      213: 8654892626978015048
+    second: AlienWal2_13
+  - first:
+      213: 6779406356385504060
+    second: AlienWal2_14
+  - first:
+      213: -1751656053543348796
+    second: AlienWal2_15
+  - first:
+      213: -1888629192523941719
+    second: AlienWal2_16
+  - first:
+      213: -2251189863751856281
+    second: AlienWal2_17
+  - first:
+      213: -304010717320003311
+    second: AlienWal2_18
+  - first:
+      213: 7186314950720838511
+    second: AlienWal2_19
+  - first:
+      213: 296319878588298657
+    second: AlienWal2_20
+  - first:
+      213: -3472649380195051685
+    second: AlienWal2_21
+  - first:
+      213: -851652610095111957
+    second: AlienWal2_22
+  - first:
+      213: -4352511378271889175
+    second: AlienWal2_23
+  - first:
+      213: -809221489846799412
+    second: AlienWal2_24
+  - first:
+      213: 3595216239206144790
+    second: AlienWal2_25
+  - first:
+      213: 1638129446365403877
+    second: AlienWal2_26
+  - first:
+      213: 5495777611552136370
+    second: AlienWal2_27
+  - first:
+      213: 5381557932176244937
+    second: AlienWal2_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlienWal2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 512
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5a53e2c58a1ef80800000000000000
+      internalID: -8078991142660233804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 57
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5935c7c7bac189ab0800000000000000
+      internalID: -5001215863341427819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38641e8b82a9f4d70800000000000000
+      internalID: 9029605277592274563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 83
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34749500f9a27a60800000000000000
+      internalID: 7670379963716236351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 75
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afff9a6305c1de80800000000000000
+      internalID: -8155520831726813274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2840e675c12ef1530800000000000000
+      internalID: 3828026819642000514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_6
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 54
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba366a2e8dfc0f50800000000000000
+      internalID: 6849127920362207930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 33
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889dd0c26e0fda530800000000000000
+      internalID: 3868012526353373576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503bdeb6a3da63870800000000000000
+      internalID: 8662301399724176133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_9
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 78
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035a290460e56b4a0800000000000000
+      internalID: -6577966824781863632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47146de015d2c420800000000000000
+      internalID: 2648913799526225742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 46
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff35a6e7dcffb2af0800000000000000
+      internalID: -419960882174733313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_12
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 45
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84661ae3a6d8ab330800000000000000
+      internalID: 3727447129059321416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 87
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8470c281dfa5c1870800000000000000
+      internalID: 8654892626978015048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_14
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 71
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b126c892a451e50800000000000000
+      internalID: 6779406356385504060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_15
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 71
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5d2e7991ed0b7e0800000000000000
+      internalID: -1751656053543348796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_16
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 71
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a87d2b71cd3ac5e0800000000000000
+      internalID: -1888629192523941719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_17
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 88
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f4c190fba22c0e0800000000000000
+      internalID: -2251189863751856281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_18
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 76
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111ca320ddfe7cbf0800000000000000
+      internalID: -304010717320003311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 62
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b5bc97f5beab360800000000000000
+      internalID: 7186314950720838511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_20
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 49
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5742f0c5dbc1400800000000000000
+      internalID: 296319878588298657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_21
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 72
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b575eff99cbaecfc0800000000000000
+      internalID: -3472649380195051685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_22
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 44
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be02f3f96725e24f0800000000000000
+      internalID: -851652610095111957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_23
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 42
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8124946f5c893c0800000000000000
+      internalID: -4352511378271889175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_24
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 52
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3b119a75115c4f0800000000000000
+      internalID: -809221489846799412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_25
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 47
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b199c0f16c4e130800000000000000
+      internalID: 3595216239206144790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_26
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 59
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea97b26d0ecbb610800000000000000
+      internalID: 1638129446365403877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_27
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 65
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc1c1dae9ce44c40800000000000000
+      internalID: 5495777611552136370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWal2_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 512
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c00d853d622faa40800000000000000
+      internalID: 5381557932176244937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AlienWal2_0: -8078991142660233804
+      AlienWal2_1: -5001215863341427819
+      AlienWal2_10: 2648913799526225742
+      AlienWal2_11: -419960882174733313
+      AlienWal2_12: 3727447129059321416
+      AlienWal2_13: 8654892626978015048
+      AlienWal2_14: 6779406356385504060
+      AlienWal2_15: -1751656053543348796
+      AlienWal2_16: -1888629192523941719
+      AlienWal2_17: -2251189863751856281
+      AlienWal2_18: -304010717320003311
+      AlienWal2_19: 7186314950720838511
+      AlienWal2_2: 9029605277592274563
+      AlienWal2_20: 296319878588298657
+      AlienWal2_21: -3472649380195051685
+      AlienWal2_22: -851652610095111957
+      AlienWal2_23: -4352511378271889175
+      AlienWal2_24: -809221489846799412
+      AlienWal2_25: 3595216239206144790
+      AlienWal2_26: 1638129446365403877
+      AlienWal2_27: 5495777611552136370
+      AlienWal2_28: 5381557932176244937
+      AlienWal2_3: 7670379963716236351
+      AlienWal2_4: -8155520831726813274
+      AlienWal2_5: 3828026819642000514
+      AlienWal2_6: 6849127920362207930
+      AlienWal2_7: 3868012526353373576
+      AlienWal2_8: 8662301399724176133
+      AlienWal2_9: -6577966824781863632
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

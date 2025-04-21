@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 619db4b5ee5405f48b0db49c4c996dbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8735177102588816428
+    second: AlienWall1_0
+  - first:
+      213: -5248825567707995042
+    second: AlienWall1_1
+  - first:
+      213: -6812673988660497749
+    second: AlienWall1_2
+  - first:
+      213: 9157703400582833763
+    second: AlienWall1_3
+  - first:
+      213: 7002202938581746714
+    second: AlienWall1_4
+  - first:
+      213: -8583340923835925235
+    second: AlienWall1_5
+  - first:
+      213: -7104544736325014458
+    second: AlienWall1_6
+  - first:
+      213: -7180476848551436122
+    second: AlienWall1_7
+  - first:
+      213: -5160773598221392393
+    second: AlienWall1_8
+  - first:
+      213: 2861041158936267604
+    second: AlienWall1_9
+  - first:
+      213: 8105859169961804047
+    second: AlienWall1_10
+  - first:
+      213: 8521583495370190518
+    second: AlienWall1_11
+  - first:
+      213: 6837028123680163482
+    second: AlienWall1_12
+  - first:
+      213: 8009094872051454974
+    second: AlienWall1_13
+  - first:
+      213: 1608117314460276775
+    second: AlienWall1_14
+  - first:
+      213: 8892220870905025195
+    second: AlienWall1_15
+  - first:
+      213: -7103736360103681680
+    second: AlienWall1_16
+  - first:
+      213: -2316780961134962445
+    second: AlienWall1_17
+  - first:
+      213: -8074770299691874621
+    second: AlienWall1_18
+  - first:
+      213: 6259584616382240433
+    second: AlienWall1_19
+  - first:
+      213: 7958976363654872470
+    second: AlienWall1_20
+  - first:
+      213: -6244338530272041116
+    second: AlienWall1_21
+  - first:
+      213: 4134906098327599259
+    second: AlienWall1_22
+  - first:
+      213: -3776887946403862931
+    second: AlienWall1_23
+  - first:
+      213: 7629369644126499693
+    second: AlienWall1_24
+  - first:
+      213: -4713711678469270081
+    second: AlienWall1_25
+  - first:
+      213: -4406850199972967813
+    second: AlienWall1_26
+  - first:
+      213: 5063799933771907218
+    second: AlienWall1_27
+  - first:
+      213: 4880489896397870771
+    second: AlienWall1_28
+  - first:
+      213: -8565012463313940767
+    second: AlienWall1_29
+  - first:
+      213: 6433667164354907888
+    second: AlienWall1_30
+  - first:
+      213: -8002830971742843203
+    second: AlienWall1_31
+  - first:
+      213: -9094325726335867420
+    second: AlienWall1_32
+  - first:
+      213: -3436403305363173925
+    second: AlienWall1_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlienWall1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 512
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d35116c4ba66c680800000000000000
+      internalID: -8735177102588816428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 65
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54e6c4a4fc6827b0800000000000000
+      internalID: -5248825567707995042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 65
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2f8573a158471a0800000000000000
+      internalID: -6812673988660497749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 66
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366602629b2b61f70800000000000000
+      internalID: 9157703400582833763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 67
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a148c5f2972dc2160800000000000000
+      internalID: 7002202938581746714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 68
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0dbfa008e8d1e880800000000000000
+      internalID: -8583340923835925235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 53
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ce97c2436976d90800000000000000
+      internalID: -7104544736325014458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 45
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0ec2c9952d95c90800000000000000
+      internalID: -7180476848551436122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_8
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 34
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5accf51cf3168b0800000000000000
+      internalID: -5160773598221392393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 39
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b0b2e86c574b720800000000000000
+      internalID: 2861041158936267604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 44
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f018ae8e7fbcd7070800000000000000
+      internalID: 8105859169961804047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 52
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be2f5d2a0fb24670800000000000000
+      internalID: 8521583495370190518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 60
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96cf47bad002ee50800000000000000
+      internalID: 6837028123680163482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 34
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef397052a55062f60800000000000000
+      internalID: 8009094872051454974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_14
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 68
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7285f856d2e215610800000000000000
+      internalID: 1608117314460276775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_15
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 69
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2db92e4c3876b70800000000000000
+      internalID: 8892220870905025195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_16
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0716efdea657a6d90800000000000000
+      internalID: -7103736360103681680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_17
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 44
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8992d9df329dfd0800000000000000
+      internalID: -2316780961134962445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_18
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6cdf3c137a0ff80800000000000000
+      internalID: -8074770299691874621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_19
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 44
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b696fc3b038ed650800000000000000
+      internalID: 6259584616382240433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_20
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 76
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69df06395d6f37e60800000000000000
+      internalID: 7958976363654872470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 35
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467a9ddc037a759a0800000000000000
+      internalID: -6244338530272041116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_22
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 70
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98b9625033226930800000000000000
+      internalID: 4134906098327599259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 55
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66a42e6c6cc59bc0800000000000000
+      internalID: -3776887946403862931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_24
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 74
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63fe4ae447f0e960800000000000000
+      internalID: 7629369644126499693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_25
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 26
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb59a37e338859eb0800000000000000
+      internalID: -4713711678469270081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 44
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a80447719b7d2c0800000000000000
+      internalID: -4406850199972967813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_27
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 42
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2900f1ae53b364640800000000000000
+      internalID: 5063799933771907218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_28
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 39
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b69dace3bbfab340800000000000000
+      internalID: 4880489896397870771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_29
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 50
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee01634b86f22980800000000000000
+      internalID: -8565012463313940767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_30
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 46
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe087ee23af84950800000000000000
+      internalID: 6433667164354907888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_31
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 27
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe06cbc1ab30f090800000000000000
+      internalID: -8002830971742843203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_32
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 37
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5ed0a8fe67ac180800000000000000
+      internalID: -9094325726335867420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWall1_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 512
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd89de86617f40d0800000000000000
+      internalID: -3436403305363173925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AlienWall1_0: -8735177102588816428
+      AlienWall1_1: -5248825567707995042
+      AlienWall1_10: 8105859169961804047
+      AlienWall1_11: 8521583495370190518
+      AlienWall1_12: 6837028123680163482
+      AlienWall1_13: 8009094872051454974
+      AlienWall1_14: 1608117314460276775
+      AlienWall1_15: 8892220870905025195
+      AlienWall1_16: -7103736360103681680
+      AlienWall1_17: -2316780961134962445
+      AlienWall1_18: -8074770299691874621
+      AlienWall1_19: 6259584616382240433
+      AlienWall1_2: -6812673988660497749
+      AlienWall1_20: 7958976363654872470
+      AlienWall1_21: -6244338530272041116
+      AlienWall1_22: 4134906098327599259
+      AlienWall1_23: -3776887946403862931
+      AlienWall1_24: 7629369644126499693
+      AlienWall1_25: -4713711678469270081
+      AlienWall1_26: -4406850199972967813
+      AlienWall1_27: 5063799933771907218
+      AlienWall1_28: 4880489896397870771
+      AlienWall1_29: -8565012463313940767
+      AlienWall1_3: 9157703400582833763
+      AlienWall1_30: 6433667164354907888
+      AlienWall1_31: -8002830971742843203
+      AlienWall1_32: -9094325726335867420
+      AlienWall1_33: -3436403305363173925
+      AlienWall1_4: 7002202938581746714
+      AlienWall1_5: -8583340923835925235
+      AlienWall1_6: -7104544736325014458
+      AlienWall1_7: -7180476848551436122
+      AlienWall1_8: -5160773598221392393
+      AlienWall1_9: 2861041158936267604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

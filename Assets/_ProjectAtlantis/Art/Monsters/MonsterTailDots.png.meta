@@ -1,10 +1,88 @@
 fileFormatVersion: 2
-guid: 321e19a1c9cf1b843be35ab90f8eafa2
+guid: d7e1bb30162ff854b925a805eb16bef7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7390099433446651325
-    second: Frame1BG_0
+      213: 220446466537934657
+    second: MonsterTailDots_0
+  - first:
+      213: 8917618992789280152
+    second: MonsterTailDots_1
+  - first:
+      213: 8539177220094107502
+    second: MonsterTailDots_2
+  - first:
+      213: 6243421798523377473
+    second: MonsterTailDots_3
+  - first:
+      213: -228139968552833425
+    second: MonsterTailDots_4
+  - first:
+      213: 5953911861453682747
+    second: MonsterTailDots_5
+  - first:
+      213: -4614916039940629249
+    second: MonsterTailDots_6
+  - first:
+      213: -7915100658127400158
+    second: MonsterTailDots_7
+  - first:
+      213: 61257445124759598
+    second: MonsterTailDots_8
+  - first:
+      213: -572723519908706287
+    second: MonsterTailDots_9
+  - first:
+      213: -3190913748734686165
+    second: MonsterTailDots_10
+  - first:
+      213: 3450645835656223792
+    second: MonsterTailDots_11
+  - first:
+      213: 2700268815243984433
+    second: MonsterTailDots_12
+  - first:
+      213: 7455750186711857816
+    second: MonsterTailDots_13
+  - first:
+      213: 7244456384210633363
+    second: MonsterTailDots_14
+  - first:
+      213: 352182925777530102
+    second: MonsterTailDots_15
+  - first:
+      213: -8582129580620187739
+    second: MonsterTailDots_16
+  - first:
+      213: 7065438244378167163
+    second: MonsterTailDots_17
+  - first:
+      213: -3273626097322539466
+    second: MonsterTailDots_18
+  - first:
+      213: -1698628997580911555
+    second: MonsterTailDots_19
+  - first:
+      213: -2535147459126171323
+    second: MonsterTailDots_20
+  - first:
+      213: -8292459846221026910
+    second: MonsterTailDots_21
+  - first:
+      213: 7782662029271034501
+    second: MonsterTailDots_22
+  - first:
+      213: -3918505202396790088
+    second: MonsterTailDots_23
+  - first:
+      213: -5092760778267583048
+    second: MonsterTailDots_24
+  - first:
+      213: -3375170494329210068
+    second: MonsterTailDots_25
+  - first:
+      213: 759543173903455925
+    second: MonsterTailDots_26
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame1BG_0
+      name: MonsterTailDots_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 17
-        width: 213
-        height: 211
+        x: 4
+        y: 22
+        width: 100
+        height: 86
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34ac89e38b7117990800000000000000
-      internalID: -7390099433446651325
+      spriteID: 14fcbf1b4ee2f0300800000000000000
+      internalID: 220446466537934657
       vertices: []
       indices: 
       edges: []
@@ -125,7 +203,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 77471c1543fb75c4c982aee00edc0e6e
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame1BG_0: -7390099433446651325
+      MonsterTailDots_0: 220446466537934657
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

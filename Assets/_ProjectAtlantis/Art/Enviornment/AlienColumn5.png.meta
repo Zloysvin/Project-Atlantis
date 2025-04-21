@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 321e19a1c9cf1b843be35ab90f8eafa2
+guid: 47d5d8fea8a6dc243b1779679846fcf7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7390099433446651325
-    second: Frame1BG_0
+      213: -905329164307081401
+    second: AlienColumn5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -56,7 +56,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -100,33 +100,50 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frame1BG_0
+      name: AlienColumn5_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 17
-        width: 213
-        height: 211
+        x: 8
+        y: 2
+        width: 112
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34ac89e38b7117990800000000000000
-      internalID: -7390099433446651325
+      spriteID: 747dca4fbef9f63f0800000000000000
+      internalID: -905329164307081401
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
     customData: 
-    physicsShape: []
+    physicsShape:
+    - - {x: -11, y: 53}
+      - {x: -25, y: 28}
+      - {x: -16, y: -5}
+      - {x: -29, y: -42}
+      - {x: -29, y: -75}
+      - {x: -48, y: -86}
+      - {x: -54, y: -122}
+      - {x: 55, y: -123}
+      - {x: 49, y: -87}
+      - {x: 28, y: -72}
+      - {x: 29, y: -39}
+      - {x: 17, y: -9}
+      - {x: 32, y: 32}
+      - {x: 11, y: 54}
+      - {x: 16, y: 70}
+      - {x: 1, y: 83}
+      - {x: -18, y: 71}
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frame1BG_0: -7390099433446651325
+      AlienColumn5_0: -905329164307081401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

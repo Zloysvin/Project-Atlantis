@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: 0c03abde9b476674eadb949b172816dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1579571755605782291
+    second: MonsterDots1_0
+  - first:
+      213: 2513747759460605646
+    second: MonsterDots1_1
+  - first:
+      213: -7133883897684574923
+    second: MonsterDots1_2
+  - first:
+      213: 598630664032091002
+    second: MonsterDots1_3
+  - first:
+      213: -8541145169021619280
+    second: MonsterDots1_4
+  - first:
+      213: 302677260211301316
+    second: MonsterDots1_5
+  - first:
+      213: -6468665596757914951
+    second: MonsterDots1_6
+  - first:
+      213: -6707146801238309766
+    second: MonsterDots1_7
+  - first:
+      213: -9056370268384639052
+    second: MonsterDots1_8
+  - first:
+      213: 6970851067163495604
+    second: MonsterDots1_9
+  - first:
+      213: -2082878167535545832
+    second: MonsterDots1_10
+  - first:
+      213: 3279577876774239044
+    second: MonsterDots1_11
+  - first:
+      213: -4401494495142174822
+    second: MonsterDots1_12
+  - first:
+      213: 735239863796382218
+    second: MonsterDots1_13
+  - first:
+      213: -4465005655180633027
+    second: MonsterDots1_14
+  - first:
+      213: 7703500760334635610
+    second: MonsterDots1_15
+  - first:
+      213: 5974994812653708758
+    second: MonsterDots1_16
+  - first:
+      213: 2674500688017963591
+    second: MonsterDots1_17
+  - first:
+      213: 7266049341608872202
+    second: MonsterDots1_18
+  - first:
+      213: -848063962254259257
+    second: MonsterDots1_19
+  - first:
+      213: -2476805911345169987
+    second: MonsterDots1_20
+  - first:
+      213: -2506319500470311619
+    second: MonsterDots1_21
+  - first:
+      213: -8829369418916662162
+    second: MonsterDots1_22
+  - first:
+      213: 6666405020075654573
+    second: MonsterDots1_23
+  - first:
+      213: 8438981075178189546
+    second: MonsterDots1_24
+  - first:
+      213: -1755062807817146946
+    second: MonsterDots1_25
+  - first:
+      213: 2449809652608755277
+    second: MonsterDots1_26
+  - first:
+      213: -1645416615717163877
+    second: MonsterDots1_27
+  - first:
+      213: 2000794627997872330
+    second: MonsterDots1_28
+  - first:
+      213: -4528188829202229310
+    second: MonsterDots1_29
+  - first:
+      213: -8103200727232378197
+    second: MonsterDots1_30
+  - first:
+      213: -1726754950737023216
+    second: MonsterDots1_31
+  - first:
+      213: -242212801005546348
+    second: MonsterDots1_32
+  - first:
+      213: 7799336654940913958
+    second: MonsterDots1_33
+  - first:
+      213: 2933101226600168922
+    second: MonsterDots1_34
+  - first:
+      213: -7308180228344262342
+    second: MonsterDots1_35
+  - first:
+      213: -4400117216391777923
+    second: MonsterDots1_36
+  - first:
+      213: -6999650507688172689
+    second: MonsterDots1_37
+  - first:
+      213: -5890638571742590622
+    second: MonsterDots1_38
+  - first:
+      213: -8878551709539091233
+    second: MonsterDots1_39
+  - first:
+      213: 2724405398538920765
+    second: MonsterDots1_40
+  - first:
+      213: 7385318950559525173
+    second: MonsterDots1_41
+  - first:
+      213: -4940169434333391566
+    second: MonsterDots1_42
+  - first:
+      213: 52924701066638506
+    second: MonsterDots1_43
+  - first:
+      213: -2124429519843715999
+    second: MonsterDots1_44
+  - first:
+      213: 4670631786053968962
+    second: MonsterDots1_45
+  - first:
+      213: 5949151499999709673
+    second: MonsterDots1_46
+  - first:
+      213: 6382590124872943595
+    second: MonsterDots1_47
+  - first:
+      213: -4731182150554954807
+    second: MonsterDots1_48
+  - first:
+      213: 3070334086966263859
+    second: MonsterDots1_49
+  - first:
+      213: -203723241545383556
+    second: MonsterDots1_50
+  - first:
+      213: 4319810929195741921
+    second: MonsterDots1_51
+  - first:
+      213: 6637105702777833596
+    second: MonsterDots1_52
+  - first:
+      213: 7177395125863805802
+    second: MonsterDots1_53
+  - first:
+      213: 6743131181492594396
+    second: MonsterDots1_54
+  - first:
+      213: 5227617295642746237
+    second: MonsterDots1_55
+  - first:
+      213: 3169773171466947188
+    second: MonsterDots1_56
+  - first:
+      213: 2290073078147244912
+    second: MonsterDots1_57
+  - first:
+      213: 8234755002651440731
+    second: MonsterDots1_58
+  - first:
+      213: -4205598843979739723
+    second: MonsterDots1_59
+  - first:
+      213: 7584748090531808224
+    second: MonsterDots1_60
+  - first:
+      213: 3474421984001693564
+    second: MonsterDots1_61
+  - first:
+      213: 6725623295398977413
+    second: MonsterDots1_62
+  - first:
+      213: 5718447624256838318
+    second: MonsterDots1_63
+  - first:
+      213: -1733036938218344328
+    second: MonsterDots1_64
+  - first:
+      213: 2428622987762323361
+    second: MonsterDots1_65
+  - first:
+      213: -4511284375428061116
+    second: MonsterDots1_66
+  - first:
+      213: -268232360858358150
+    second: MonsterDots1_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MonsterDots1_LeftFang
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 121
+        height: 128
+      alignment: 9
+      pivot: {x: 0.95459604, y: 0.17161742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f6f1e8424cbe510800000000000000
+      internalID: 1579571755605782291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterDots1_RightFang
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 121
+        height: 128
+      alignment: 9
+      pivot: {x: 0.0389712, y: 0.17364447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8ad6046dc42d046a2bd8300f2e04a1
+      internalID: 809222851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterDots1_Eye
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 5
+        width: 72
+        height: 60
+      alignment: 9
+      pivot: {x: 0.49279276, y: 0.054588873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51206160c278ce547bd638781caa2956
+      internalID: -2129695209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MonsterDots1_Eye: -2129695209
+      MonsterDots1_LeftFang: 1579571755605782291
+      MonsterDots1_RightFang: 809222851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
