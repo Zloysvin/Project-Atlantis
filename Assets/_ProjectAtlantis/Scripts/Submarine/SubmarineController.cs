@@ -102,9 +102,13 @@ public class SubmarineController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log($"Distance{0.15f + (1.35f * (65f - Vector2.Distance(transform.position, other.transform.position)) / 17.5f)}");
-        PingDisplayHandler.Instance.CrazynessFactor =
-            0.15f + (1.35f * (65f - Vector2.Distance(transform.position, other.transform.position)) / 65f);
+        if(other.tag == "Finish")
+        {
+            Debug.Log(
+                $"Distance{0.15f + (1.35f * (65f - Vector2.Distance(transform.position, other.transform.position)) / 17.5f)}");
+            PingDisplayHandler.Instance.CrazynessFactor =
+                0.15f + (1.35f * (65f - Vector2.Distance(transform.position, other.transform.position)) / 65f);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
