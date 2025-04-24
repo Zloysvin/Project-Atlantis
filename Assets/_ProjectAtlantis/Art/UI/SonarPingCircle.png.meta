@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SonarPingCircle_0: -4783672288304318830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
