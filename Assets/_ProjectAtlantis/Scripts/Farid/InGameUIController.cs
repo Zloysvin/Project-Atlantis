@@ -12,26 +12,45 @@ public class InGameUIController : MonoBehaviour
     [SerializeField] TextMeshProUGUI pressureInfo;
     [SerializeField] TextMeshProUGUI coordinatesInfo;
     [SerializeField] TextMeshProUGUI depthInfo;
+
     [SerializeField] TextMeshProUGUI fuelLeftInfo;
     [SerializeField] TextMeshProUGUI beaconsLeftInfo;
     [SerializeField] TextMeshProUGUI consoleInfo;
 
-    DateTime currentTime = DateTime.Now;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    StatsFaker playerStats;
+
+    private void Awake()
     {
-        energyInfo.text = currentTime.ToString();
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<StatsFaker>();
+        playerStats.OnFakeStatsChanged += UpdateFakeStats;
+        playerStats.OnSpeedChanged += UpdateSpeed;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateSpeed(string speedText)
     {
-        
+        speedInfo.text = speedText;
     }
+
+    private void UpdateFakeStats(string temperature, string pressure, string depth, string coords)
+    {
+        temperatureInfo.text = temperature;
+        pressureInfo.text = pressure;
+        depthInfo.text = depth;
+        coordinatesInfo.text = coords;
+    }
+
 
     private void FixedUpdate()
     {
-        energyInfo.text = DateTime.Now.ToString();
+        timeInfo.text = DateTime.Now.ToString();
+    }
+
+    private void OnDisable()
+    {
+        if(playerStats != null) { 
+            playerStats.OnFakeStatsChanged -= UpdateFakeStats; 
+            playerStats.OnSpeedChanged -= UpdateSpeed; 
+        }
     }
 }

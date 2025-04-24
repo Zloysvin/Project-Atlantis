@@ -158,6 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2541672482409050501}
   - component: {fileID: 5163844054656044316}
+  - component: {fileID: 3522477779762804591}
   m_Layer: 0
   m_Name: DecorationsDots_PillarBase
   m_TagString: Untagged
@@ -235,3 +236,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3522477779762804591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2232131440697803524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1

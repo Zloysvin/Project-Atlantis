@@ -22,6 +22,7 @@ public class ActiveSonar : MonoBehaviour
             // Sonar logic goes here
 
             Debug.Log("Sonar Active");
+            PingDisplayHandler.Instance.DisplaySonarRing(sonarTime, 4f,transform.position);//speed should be the projectilespeed.
 
             while (currentEmitterAngle < 360f)
             {

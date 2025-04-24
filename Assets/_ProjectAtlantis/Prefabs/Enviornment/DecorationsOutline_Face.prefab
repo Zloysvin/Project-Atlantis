@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7872660124148703266}
   - component: {fileID: 8018558190514317786}
+  - component: {fileID: 1561028152661365762}
   m_Layer: 0
   m_Name: DecorationsDots2_Face
   m_TagString: Untagged
@@ -87,6 +88,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1561028152661365762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684397613492271985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
 --- !u!1 &1993771723881388679
 GameObject:
   m_ObjectHideFlags: 0

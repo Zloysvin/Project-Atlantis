@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 4526466222859042991}
   - component: {fileID: 8974300028756528192}
   - component: {fileID: 4522151861301183079}
+  - component: {fileID: 516724599004206293}
+  - component: {fileID: 223324231431039009}
+  - component: {fileID: -4199980132891658401}
   m_Layer: 0
   m_Name: AlienElement 1
   m_TagString: Untagged
@@ -182,7 +185,7 @@ MonoBehaviour:
   m_WorldSpaceUV: 0
   m_CornerAngleThreshold: 30
   m_ColliderDetail: 16
-  m_ColliderOffset: 0.5
+  m_ColliderOffset: 0.389
   m_UpdateCollider: 1
   m_EnableTangents: 0
   m_GeometryCached: 0
@@ -193,5 +196,121 @@ MonoBehaviour:
   m_BoundsScale: 2
   m_Creator: {fileID: 0}
   m_Modifiers: []
-  m_ColliderSegment: []
+  m_ColliderSegment:
+  - {x: -2.4374406, y: -3.2967694}
+  - {x: -2.4864783, y: -2.2318652}
+  - {x: -2.4958785, y: 0.42266434}
+  - {x: -2.4542375, y: 1.4462019}
+  - {x: -1.3820944, y: 1.5068247}
+  - {x: 2.455274, y: 1.5618074}
+  - {x: 2.584117, y: 1.5183834}
+  - {x: 2.5377247, y: 1.6810191}
+  - {x: 2.5191548, y: 4.373054}
+  - {x: 2.5572906, y: 5.406765}
+  - {x: 3.6451347, y: 5.4606447}
+  - {x: 7.8929267, y: 5.4942894}
+  - {x: 8.936178, y: 5.457286}
+  - {x: 8.981197, y: 4.330514}
+  - {x: 8.979775, y: -2.1657782}
+  - {x: 8.934287, y: -3.1831908}
+  - {x: 7.8425574, y: -3.246372}
+  - {x: 2.0078328, y: -3.3420346}
+  - {x: -1.4066278, y: -3.342035}
+  - {x: -2.4374406, y: -3.2967694}
   m_ShadowSegment: []
+--- !u!60 &516724599004206293
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129224537837728953}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -2.4374406, y: -3.2967694}
+      - {x: -2.4864783, y: -2.2318652}
+      - {x: -2.4958785, y: 0.42266434}
+      - {x: -2.4542375, y: 1.4462019}
+      - {x: -1.3820944, y: 1.5068247}
+      - {x: 2.455274, y: 1.5618074}
+      - {x: 2.584117, y: 1.5183834}
+      - {x: 2.5377247, y: 1.6810191}
+      - {x: 2.5191548, y: 4.373054}
+      - {x: 2.5572906, y: 5.406765}
+      - {x: 3.6451347, y: 5.4606447}
+      - {x: 7.8929267, y: 5.4942894}
+      - {x: 8.936178, y: 5.457286}
+      - {x: 8.981197, y: 4.330514}
+      - {x: 8.979775, y: -2.1657782}
+      - {x: 8.934287, y: -3.1831908}
+      - {x: 7.8425574, y: -3.246372}
+      - {x: 2.0078328, y: -3.3420346}
+      - {x: -1.4066278, y: -3.342035}
+      - {x: -2.4374406, y: -3.2967694}
+  m_UseDelaunayMesh: 0
+--- !u!114 &223324231431039009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129224537837728953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
+--- !u!114 &-4199980132891658401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129224537837728953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

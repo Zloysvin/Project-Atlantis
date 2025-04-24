@@ -15,6 +15,8 @@ MonoBehaviour:
   sceneDatasByGuid:
     keys:
     - 421eefd31a320ca48bd8944f74327be0
+    - 78ba97c633887a143b14e399ccca3da3
+    - 
     values:
     - goDatasByGlobalId:
         keys:
@@ -38,17 +40,67 @@ MonoBehaviour:
         - iColor: 8
           icon: 
       goDatasByInstanceId:
-        keys: 1cb00000d2af000084af000006b00000caaf0000beb00000
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-1674196212-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-1838367178-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-906112812-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-1757313277-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-1845804418-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-1893102274-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-891873630-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-1739881123-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-1948240826-0
+        - GlobalObjectId_V1-2-78ba97c633887a143b14e399ccca3da3-1571086035-0
         values:
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 9
+          icon: 
         - iColor: 9
           icon: 
         - iColor: 2
           icon: 
+        - iColor: 7
+          icon: 
         - iColor: 2
           icon: 
-        - iColor: 4
+        - iColor: 6
           icon: 
-        - iColor: 8
+      goDatasByInstanceId:
+        keys: 10b2000034c8d7ff1cb100003eb2000058b2000074b200000eb100002eb200008ab20000e4b10000
+        values:
+        - iColor: 2
           icon: 
-        - iColor: 8
+        - iColor: 2
           icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 9
+          icon: 
+        - iColor: 9
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 7
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 6
+          icon: 
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []

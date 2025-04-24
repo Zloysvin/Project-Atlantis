@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3157832155754124051}
   - component: {fileID: 4900275018058298153}
   - component: {fileID: 3748960412679747961}
+  - component: {fileID: 7165634797803192979}
+  - component: {fileID: -1702697170063424606}
   m_Layer: 0
   m_Name: EnviornmentShapeGround
   m_TagString: Untagged
@@ -363,3 +365,32 @@ PolygonCollider2D:
       - {x: -4.7113323, y: -3.545248}
       - {x: -5.193406, y: -3.4224741}
   m_UseDelaunayMesh: 0
+--- !u!114 &7165634797803192979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4791500501279678451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
+--- !u!114 &-1702697170063424606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4791500501279678451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

@@ -24,7 +24,7 @@ public class PingProjectile : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        PingDisplayHandler.Instance.DisplayPing(collision.contacts[0].point);
+        PingDisplayHandler.Instance.DisplayPing(collision.contacts[0].point,transform.up);
         Destroy(gameObject);
     }
 }

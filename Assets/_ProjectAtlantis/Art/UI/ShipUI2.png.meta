@@ -198,7 +198,7 @@ TextureImporter:
         width: 19
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,13 +366,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShipUI2_SnoarDot
+      name: ShipUI2_SnoarPing
       rect:
         serializedVersion: 2
         x: 103
-        y: 72
-        width: 16
-        height: 15
+        y: 73
+        width: 15
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,7 +462,7 @@ TextureImporter:
         width: 40
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -493,6 +493,28 @@ TextureImporter:
       bones: []
       spriteID: 030d23873dee4fd4baf41f736339e1b8
       internalID: -965355190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipUI2_SonarPing2
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 72
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 12, z: 10, w: 11}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4548e688e0f5646b19873584d0e6fc
+      internalID: -369442457
       vertices: []
       indices: 
       edges: []
@@ -543,8 +565,9 @@ TextureImporter:
       ShipUI2_LineHorizontal: -2193544411138466119
       ShipUI2_LineVertical: 673143614821356459
       ShipUI2_Question: 1415247606
-      ShipUI2_SnoarDot: 6913826167750655751
+      ShipUI2_SnoarPing: 6913826167750655751
       ShipUI2_SonarListen: 1990209135593831588
+      ShipUI2_SonarPing2: -369442457
       ShipUI2_SonarSend: -8584164420083033257
       ShipUI2_Triangle: 405132268694616310
   mipmapLimitGroupName: 
