@@ -18,10 +18,7 @@ public class SubmarineController : MonoBehaviour
     [SerializeField] private float maxY = 2f;
     [SerializeField] private float maxNegativeY = 2f;
 
-    [Header("Rotation Settings")]
-    [SerializeField] private float maxRotationAngle = 15f; // Degrees
-    [SerializeField] private float maxRotationSpeed = 0.5f; // Degrees per second
-    [SerializeField] private float torqueForce = 5f;
+    [Header("Survival")]
 
     private InputAction move;
     private InputAction rotate;
@@ -116,52 +113,9 @@ public class SubmarineController : MonoBehaviour
         PingDisplayHandler.Instance.CrazynessFactor = 0.15f;
     }
 
-    //void Rotate()
-    //{
-    //    float rotateInput = rotate.ReadValue<Vector2>().x;
-    //    float currentZRotation = NormalizeAngle(transform.eulerAngles.z);
-    //    Debug.Log($"Rotation {transform.eulerAngles.z}, Normalized {currentZRotation}");
-
-    //    float rotationLimit = maxRotationAngle;
-    //    float relativeRotation = Mathf.Abs(currentZRotation) / rotationLimit;
-    //    float normalizedDistance = 0f;
-
-    //    if(relativeRotation <= 0f)
-    //        normalizedDistance = 1f - relativeRotation;
-    //    else
-    //    {
-    //        normalizedDistance = relativeRotation - 1f;
-    //    }
-
-    //    //bool atPositiveLimit = currentZRotation >= rotationLimit && rotateInput > 0;
-    //    //bool atNegativeLimit = currentZRotation <= -rotationLimit && rotateInput < 0;
-
-    //    bool atPositiveLimit = currentZRotation >= rotationLimit;
-    //    bool atNegativeLimit = currentZRotation <= -rotationLimit;
-
-    //    if (!atPositiveLimit && !atNegativeLimit)
-    //    {
-    //        float torque = rotateInput * torqueForce * normalizedDistance;
-    //        rb.AddTorque(torque, ForceMode2D.Force);
-    //    }
-    //    else
-    //    {
-    //        float torque = 0f;
-
-    //        if (atPositiveLimit)
-    //            torque = -1 * torqueForce * normalizedDistance;
-
-    //        if (atNegativeLimit)
-    //            torque = 1 * torqueForce * normalizedDistance;
-
-    //        rb.AddTorque(-torque, ForceMode2D.Force);
-    //    }
-    //}
-
-    //float NormalizeAngle(float angle)
-    //{
-    //    angle %= 360;
-    //    if (angle > 180) angle -= 360;
-    //    return angle;
-    //}
+    private void OnCollisionEnter2D(Collision2D other) // TODO: Tweak numbers so collision would create decent noise if close to the monster
+    {
+        SubmarineSoundsManager.Instance.EmitCollision(rb.linearVelocity.magnitude / 2f * 120f);
+        Debug.Log(rb.linearVelocity.magnitude / 2f * 120f);
+    }
 }

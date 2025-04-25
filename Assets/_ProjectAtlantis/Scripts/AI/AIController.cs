@@ -22,6 +22,7 @@ public class AIController : MonoBehaviour
     [SerializeField] float moveSpeed = 2f;
 
     [Header("AI Behavior")]
+    [SerializeField] private float interestRange = 30f;
     [SerializeField] private float agroRange = 10f;
     [SerializeField] private float agroTime = 10f;
     [SerializeField] private AIState state;
@@ -39,6 +40,13 @@ public class AIController : MonoBehaviour
 
     private MonsterSoundEmmiter soundEmmiter;
 
+    private Vector3 target;
+    private bool atTarget;
+    private bool atOrbit;
+
+    private int orbitIndex;
+    private int totalOrbitIndex;
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -46,52 +54,126 @@ public class AIController : MonoBehaviour
 
     private void Start()
     {
-        agent.SetDestination(PatrolPoints[currentIndex].position);
+        target = PatrolPoints[currentIndex].position;
+        agent.SetDestination(target);
         orbitPositions = new List<Vector3>();
         soundEmmiter = GetComponent<MonsterSoundEmmiter>();
-        StartCoroutine("AISoundTest");
+        StartCoroutine("AIAmbientSound");
     }
 
     private void Update()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
 
-        if (Mathf.Abs(Vector2.Distance(transform.position, PatrolPoints[currentIndex].position)) <= 2f)
-        {
-            currentIndex++;
-            if (currentIndex == PatrolPoints.Count)
-            {
-                currentIndex = 0;
-            }
 
-            agent.SetDestination(PatrolPoints[currentIndex].position);
+
+        if (state == AIState.Patrol)
+        {
+            MoveToPoint(target);
+            if(atTarget)
+            {
+                currentIndex++;
+                if (currentIndex == PatrolPoints.Count)
+                {
+                    currentIndex = 0;
+                }
+
+                target = PatrolPoints[currentIndex].position;
+                agent.SetDestination(target);
+                transform.right = new Vector3(agent.velocity.x, agent.velocity.y) + transform.position;
+
+                atTarget = false;
+            }
         }
 
-        transform.right = new Vector3(agent.velocity.x, agent.velocity.y) + transform.position;
+        if (state == AIState.Investigation)
+        {
+            if (!atOrbit)
+            {
+                MoveToPoint(target);
+                if (atTarget)
+                {
+                    atOrbit = true;
+                    orbitIndex = 0;
+                    totalOrbitIndex = 0;
+                    target = orbitPositions[0];
+                    agent.SetDestination(target);
+                    atTarget = false;
+                }
+            }
+            else
+            {
+                MoveToPoint(target, 0.2f);
+                if (atTarget)
+                {
+                    totalOrbitIndex++;
+                    orbitIndex++;
+
+                    if (orbitIndex == orbitPositions.Count)
+                    {
+                        orbitIndex = 0;
+                    }
+
+                    target = orbitPositions[orbitIndex];
+                    agent.SetDestination(target);
+
+                    if (totalOrbitIndex == orbitPositions.Count * 2)
+                    {
+                        state = AIState.Patrol;
+                        atOrbit = false;
+                        target = PatrolPoints[currentIndex].position;
+                        agent.SetDestination(target);
+                    }
+
+                    atTarget = false;
+                }
+            }
+        }
     }
 
     public void CheckAgro(Vector3 target, float distance)
     {
-        if (distance <= agroRange)
+        if (distance <= interestRange)
         {
-            // AI become aggressive towards player sub
-        }
+            state = AIState.Investigation;
+            atOrbit = false;
+            this.target = target;
+            agent.SetDestination(target);
 
-        GenerateDynamicOrbit(target);
+            GenerateDynamicOrbit(target);
+        }
     }
 
-    private IEnumerator AISoundTest()
+    private IEnumerator AIAmbientSound()
     {
         while (true)
         {
             soundEmmiter.SendSound(SFXs[Random.Range(0, SFXs.Count)], soundRange);
-            yield return new WaitForSeconds(Random.Range(7, 10));
+            yield return new WaitForSeconds(Random.Range(10, 16));
         }
     }
 
     private void MoveToPoint(Vector3 target)
     {
+        if (Mathf.Abs(Vector2.Distance(transform.position, target)) <= 2f)
+        {
+            atTarget = true;
+            return;
+        }
 
+        atTarget = false;
+
+    }
+
+    private void MoveToPoint(Vector3 target, float accuracy)
+    {
+        if (Mathf.Abs(Vector2.Distance(transform.position, target)) <= accuracy)
+        {
+            atTarget = true;
+            return;
+        }
+
+        atTarget = false;
     }
 
     private void GenerateDynamicOrbit(Vector3 center)
@@ -125,5 +207,7 @@ public class AIController : MonoBehaviour
 
             Debug.DrawLine(bestPositions[^1], bestPositions[0], Color.green, 6f);
         }
+
+        orbitPositions = new List<Vector3>(bestPositions);
     }
 }
