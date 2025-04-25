@@ -1,5 +1,8 @@
+using Unity.Mathematics;
 using UnityEngine;
 using System.Collections;
+using Random = UnityEngine.Random;
+
 public class PingDisplayHandler : MonoBehaviour
 {
     public static PingDisplayHandler Instance;
@@ -75,5 +78,16 @@ public class PingDisplayHandler : MonoBehaviour
             lineRenderer.SetPosition(i, new Vector3(x, y, 0));
             angle += 2 * Mathf.PI / segments;
         }
+        float2 speacialCrazyness = new float2(0, 0);
+
+        if (CrazynessFactor > 0.5f)
+        {
+            speacialCrazyness.x = Mathf.Cos(CrazynessFactor);
+            speacialCrazyness.y = Mathf.Sin(CrazynessFactor);
+        }
+
+        Instantiate(PingPrefab,
+            pingPosition + new Vector2(Random.Range(-CrazynessFactor - speacialCrazyness.x, CrazynessFactor + speacialCrazyness.y),
+                Random.Range(-CrazynessFactor, CrazynessFactor)), Quaternion.identity);
     }
 }
