@@ -8,34 +8,58 @@ public class ActiveSonar : MonoBehaviour
     [SerializeField] private float sonarTime = 5f;
     [SerializeField] private GameObject pingProjectile;
 
+    private SubmarineSoundEmmiter soundEmmiter;
+
+    public bool IsPassiveSonar { get; private set; }
+
     private float currentEmitterAngle = 0f;
 
     void Start()
     {
+        soundEmmiter = GetComponent<SubmarineSoundEmmiter>();
+
         StartCoroutine("Sonar");
+
+        IsPassiveSonar = false;
     }
 
     private IEnumerator Sonar()
     {
         while (true)
         {
-            // Sonar logic goes here
-
-            Debug.Log("Sonar Active");
-
-            while (currentEmitterAngle < 360f)
+            if(!IsPassiveSonar)
             {
-                var projectile = Instantiate(pingProjectile, transform.position,
-                    Quaternion.identity);
+                // Sonar logic goes here
 
-                projectile.transform.up = Quaternion.AngleAxis(currentEmitterAngle, Vector3.forward) * projectile.transform.up;
+                Debug.Log("Sonar Active");
 
-                currentEmitterAngle += angleMove;
+                while (currentEmitterAngle < 360f)
+                {
+                    var projectile = Instantiate(pingProjectile, transform.position,
+                        Quaternion.identity);
+
+                    projectile.transform.up = Quaternion.AngleAxis(currentEmitterAngle, Vector3.forward) *
+                                              projectile.transform.up;
+
+                    currentEmitterAngle += angleMove;
+                }
+
+                currentEmitterAngle -= 360f;
+
+                soundEmmiter.SendSound();
+
+                yield return new WaitForSeconds(sonarTime);
             }
-
-            currentEmitterAngle -= 360f;
-
-            yield return new WaitForSeconds(sonarTime);
+            else
+            {
+                yield return null;
+            }
         }
+    }
+
+    [ContextMenu("ToggleSonar")]
+    public void ToggleSonar()
+    {
+        IsPassiveSonar = !IsPassiveSonar;
     }
 }

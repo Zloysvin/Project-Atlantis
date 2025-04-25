@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -5,14 +6,27 @@ using static UnityEngine.GraphicsBuffer;
 
 public class AIController : MonoBehaviour
 {
+    public enum AIState
+    {
+        Patrol, Investigation, Agro
+    }
+
     public List<Transform> PatrolPoints;
 
     [Header("Move Stats")]
     [SerializeField] float rotationSpeed = 15f;
     [SerializeField] float moveSpeed = 2f;
 
+    [Header("AI Behavior")]
+    [SerializeField] private float agroRange = 10f;
+    [SerializeField] private float agroTime = 10f;
+    [SerializeField] private AIState state;
+    [SerializeField] private bool SoundReload = false;
+
     private NavMeshAgent agent;
     private int currentIndex = 0;
+
+    private MonsterSoundEmmiter soundEmmiter;
 
     private void Awake()
     {
@@ -22,6 +36,8 @@ public class AIController : MonoBehaviour
     private void Start()
     {
         agent.SetDestination(PatrolPoints[currentIndex].position);
+        soundEmmiter = GetComponent<MonsterSoundEmmiter>();
+        StartCoroutine("AISoundTest");
     }
 
     private void Update()
@@ -36,13 +52,24 @@ public class AIController : MonoBehaviour
 
             agent.SetDestination(PatrolPoints[currentIndex].position);
         }
-        Rotate(new Vector3(agent.velocity.x, agent.velocity.y));
+
+        transform.right = new Vector3(agent.velocity.x, agent.velocity.y) + transform.position;
     }
 
-    private void Rotate(Vector3 direction)
+    public void CheckAgro(Vector3 target, float distance)
     {
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        if (distance <= agroRange)
+        {
+            // AI become aggressive towards player sub
+        }
+    }
+
+    private IEnumerator AISoundTest()
+    {
+        while (true)
+        {
+            soundEmmiter.SendSound();
+            yield return new WaitForSeconds(Random.Range(5f, 10f));
+        }
     }
 }
