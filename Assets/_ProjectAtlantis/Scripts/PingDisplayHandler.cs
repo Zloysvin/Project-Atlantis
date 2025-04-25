@@ -2,6 +2,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using System.Collections;
 using Random = UnityEngine.Random;
+using System;
 
 public class PingDisplayHandler : MonoBehaviour
 {
@@ -28,13 +29,38 @@ public class PingDisplayHandler : MonoBehaviour
 
     public void DisplayPing(Vector2 pingPosition, Vector3 upTransform)
     {
+        float2 speacialCrazyness = new float2(0, 0);
+
+        if (CrazynessFactor > 0.5f)
+        {
+            speacialCrazyness.x = Mathf.Cos(CrazynessFactor);
+            speacialCrazyness.y = Mathf.Sin(CrazynessFactor);
+        }
+
         var tmpPing = Instantiate(PingPrefab,
-            pingPosition + new Vector2(Random.Range(-CrazynessFactor, CrazynessFactor),
+            pingPosition + new Vector2(
+                Random.Range(-CrazynessFactor - speacialCrazyness.x, CrazynessFactor + speacialCrazyness.y),
                 Random.Range(-CrazynessFactor, CrazynessFactor)), Quaternion.identity).transform;
 
         tmpPing.up = upTransform;
         tmpPing.parent = transform;
 
+    }
+
+    public void DisplayPing(Vector2 pingPosition)
+    {
+        float2 speacialCrazyness = new float2(0, 0);
+
+        if (CrazynessFactor > 0.5f)
+        {
+            speacialCrazyness.x = Mathf.Cos(CrazynessFactor);
+            speacialCrazyness.y = Mathf.Sin(CrazynessFactor);
+        }
+
+        Instantiate(PingPrefab,
+            pingPosition + new Vector2(
+                Random.Range(-CrazynessFactor - speacialCrazyness.x, CrazynessFactor + speacialCrazyness.y),
+                Random.Range(-CrazynessFactor, CrazynessFactor)), Quaternion.identity);
     }
 
     public void DisplaySonarRing(float sonarPingDuration, float circleSpeed,Vector2 startPos)
@@ -78,16 +104,5 @@ public class PingDisplayHandler : MonoBehaviour
             lineRenderer.SetPosition(i, new Vector3(x, y, 0));
             angle += 2 * Mathf.PI / segments;
         }
-        float2 speacialCrazyness = new float2(0, 0);
-
-        if (CrazynessFactor > 0.5f)
-        {
-            speacialCrazyness.x = Mathf.Cos(CrazynessFactor);
-            speacialCrazyness.y = Mathf.Sin(CrazynessFactor);
-        }
-
-        Instantiate(PingPrefab,
-            pingPosition + new Vector2(Random.Range(-CrazynessFactor - speacialCrazyness.x, CrazynessFactor + speacialCrazyness.y),
-                Random.Range(-CrazynessFactor, CrazynessFactor)), Quaternion.identity);
     }
 }
