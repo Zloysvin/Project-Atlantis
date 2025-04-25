@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -5,7 +6,7 @@ public class SubmarineSoundEmmiter : MonoBehaviour, ISoundSystemMember
 {
     [field: SerializeField] public SignalType TargetSignal { get; set; }
     [field: SerializeField] public SignalType OutputSignal { get; set; }
-    [field: SerializeField] public float SoundDistance { get; set; }
+    [field: SerializeField] public float SoundRange { get; set; }
     [field: SerializeField] public AudioSource Audio { get; set; }
 
     public Transform Transform { get; set; }
@@ -65,10 +66,10 @@ public class SubmarineSoundEmmiter : MonoBehaviour, ISoundSystemMember
         }
     }
 
-    public void SendSound()
+    public void SendSound(AudioClip SFX, float soundRange)
     {
-        GlobalSoundHandler.Instance.Send(this, SoundDistance);
-        PlaySound();
+        SoundRange = soundRange;
+        GlobalSoundHandler.Instance.Send(this, SoundRange);
     }
 
     public void PlaySound()

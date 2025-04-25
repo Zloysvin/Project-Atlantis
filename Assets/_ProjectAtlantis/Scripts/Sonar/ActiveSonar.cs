@@ -46,7 +46,7 @@ public class ActiveSonar : MonoBehaviour
 
                 currentEmitterAngle -= 360f;
 
-                soundEmmiter.SendSound();
+                SubmarineSoundsManager.Instance.EmitSonar();
 
                 yield return new WaitForSeconds(sonarTime);
             }

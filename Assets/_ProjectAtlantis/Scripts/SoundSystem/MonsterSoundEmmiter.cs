@@ -6,7 +6,7 @@ public class MonsterSoundEmmiter : MonoBehaviour, ISoundSystemMember
 {
     [field: SerializeField] public SignalType TargetSignal { get; set; }
     [field: SerializeField] public SignalType OutputSignal { get; set; }
-    [field: SerializeField] public float SoundDistance { get; set; }
+    [field: SerializeField] public float SoundRange { get; set; }
     [field: SerializeField] public AudioSource Audio { get; set; }
 
     public Transform Transform { get; set; }
@@ -48,9 +48,11 @@ public class MonsterSoundEmmiter : MonoBehaviour, ISoundSystemMember
         }
     }
 
-    public void SendSound()
+    public void SendSound(AudioClip SFX, float soundRange)
     {
-        GlobalSoundHandler.Instance.Send(this, SoundDistance);
+        Audio.clip = SFX;
+        SoundRange = soundRange;
+        GlobalSoundHandler.Instance.Send(this, SoundRange);
     }
 
     public void PlaySound()

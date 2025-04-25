@@ -12,6 +12,10 @@ public class AIController : MonoBehaviour
     }
 
     public List<Transform> PatrolPoints;
+    [Header("Monster Sounds")]
+    [SerializeField] private List<AudioClip> SFXs = new List<AudioClip>();
+
+    [SerializeField] private float soundRange = 10f;
 
     [Header("Move Stats")]
     [SerializeField] float rotationSpeed = 15f;
@@ -80,8 +84,8 @@ public class AIController : MonoBehaviour
     {
         while (true)
         {
-            soundEmmiter.SendSound();
-            yield return new WaitForSeconds(Random.Range(5f, 10f));
+            soundEmmiter.SendSound(SFXs[Random.Range(0, SFXs.Count)], soundRange);
+            yield return new WaitForSeconds(Random.Range(7, 10));
         }
     }
 
