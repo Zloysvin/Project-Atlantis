@@ -1,6 +1,11 @@
+using DG.Tweening;
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class InGameUIController : MonoBehaviour
 {
@@ -14,9 +19,17 @@ public class InGameUIController : MonoBehaviour
     [SerializeField] TextMeshProUGUI depthInfo;
 
     [SerializeField] TextMeshProUGUI fuelLeftInfo;
-    [SerializeField] TextMeshProUGUI beaconsLeftInfo;
-    [SerializeField] TextMeshProUGUI consoleInfo;
 
+    [Header("PauseMenu:")]
+    [SerializeField] RectTransform pauseMenuRect;
+    [SerializeField] Sprite normalIcon;
+    [SerializeField] Sprite activeIcon;
+    [SerializeField] Image targetImage;
+    [SerializeField] float animationDuration = 0.15f;
+    bool isPaused = false;
+    [SerializeField] AudioMixer globalMixer;
+    [SerializeField] Vector2 minMaxDbRange = new Vector2(-40, 20);
+    [SerializeField] Slider volumeSlider;
 
     StatsFaker playerStats;
 
@@ -25,6 +38,8 @@ public class InGameUIController : MonoBehaviour
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<StatsFaker>();
         playerStats.OnFakeStatsChanged += UpdateFakeStats;
         playerStats.OnSpeedChanged += UpdateSpeed;
+
+        volumeSlider.onValueChanged.AddListener(AdjustGlobalAudioScale);
     }
 
     private void UpdateSpeed(string speedText)
@@ -52,5 +67,35 @@ public class InGameUIController : MonoBehaviour
             playerStats.OnFakeStatsChanged -= UpdateFakeStats; 
             playerStats.OnSpeedChanged -= UpdateSpeed; 
         }
+
+        pauseMenuRect.DOKill();
     }
+
+    public void TogglePauseMenu()
+    {
+        AudioManagerF.Instance.PlayButtonPressedSound();
+        if(!isPaused)
+        {
+            targetImage.sprite = activeIcon;
+            pauseMenuRect.DOScaleY(1f, animationDuration);
+            isPaused = true;
+        }
+        else
+        {
+            targetImage.sprite = normalIcon;
+            pauseMenuRect.DOScaleY(0f, animationDuration);
+            isPaused = false;
+        }
+    }
+
+    public void AdjustGlobalAudioScale(float ratio)
+    {
+        //float dB = Mathf.Log10(Mathf.Clamp(ratio, 0.0001f, 1f)) * 20f;
+        float dB = Mathf.Lerp(minMaxDbRange.x, minMaxDbRange.y, ratio);
+        Debug.Log(dB);
+        globalMixer.SetFloat("MasterVolume", dB);
+    }
+
+    
+    
 }

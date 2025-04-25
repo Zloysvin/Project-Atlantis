@@ -21,8 +21,9 @@ public class BeaconController : MonoBehaviour
 
     public void EjectBeacon()
     {
-        if (currentBeacons == 0) { return; }
+        if (currentBeacons == 0) { AudioManagerF.Instance.PlayButtonRejectedSound(); return; }
 
+        AudioManagerF.Instance.PlayBeaconSound();
         currentBeacons--;
         if (currentBeacons <= 0)
         {

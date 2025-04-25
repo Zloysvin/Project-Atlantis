@@ -281,6 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4479434429784540155}
   - component: {fileID: 8223432999443582056}
+  - component: {fileID: 7969274863718967500}
   m_Layer: 0
   m_Name: MonsterMiddleDots_0
   m_TagString: Untagged
@@ -358,6 +359,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7969274863718967500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788308956637247099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
 --- !u!1 &1692349716429278677
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3248872266718044337}
   - component: {fileID: 8514129057917765361}
+  - component: {fileID: 5544943063178077260}
   m_Layer: 0
   m_Name: MonsterTailDots_0
   m_TagString: Untagged
@@ -445,6 +460,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5544943063178077260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692349716429278677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
 --- !u!1 &1729230797586278166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,6 +1328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4215865145081510895}
   - component: {fileID: 53500865142034074}
+  - component: {fileID: 4784576635056943644}
   m_Layer: 0
   m_Name: MonsterMiddleDots_0
   m_TagString: Untagged
@@ -1377,6 +1406,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4784576635056943644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5170651072948478021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
 --- !u!1 &5238635934107996394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 15
-  moveSpeed: 3
+  moveSpeed: 1
   target: {fileID: 0}
 --- !u!60 &1943114414776207370
 PolygonCollider2D:
@@ -2459,6 +2501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1616218659086259987}
   - component: {fileID: 868298680624812122}
+  - component: {fileID: 8626126084102681429}
   m_Layer: 0
   m_Name: MonsterMiddleDots_0
   m_TagString: Untagged
@@ -2536,6 +2579,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8626126084102681429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014618247536143523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
 --- !u!1 &8112156421793416112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,6 +2602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8216568682943466374}
   - component: {fileID: 4822903037187724332}
+  - component: {fileID: 892490710505245840}
   m_Layer: 0
   m_Name: MonsterMiddleDots_0
   m_TagString: Untagged
@@ -2623,6 +2680,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &892490710505245840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8112156421793416112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
 --- !u!1 &8481052014388077901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,6 +2703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9019957835408564358}
   - component: {fileID: 7830487127423678043}
+  - component: {fileID: 7371569994061884957}
   m_Layer: 0
   m_Name: MonsterMiddleDots_0
   m_TagString: Untagged
@@ -2710,6 +2781,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7371569994061884957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8481052014388077901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
 --- !u!1 &8992101819587999357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,6 +2804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083751907410878911}
   - component: {fileID: 532380891154364246}
+  - component: {fileID: 3483025067105103355}
   m_Layer: 0
   m_Name: MonsterHeadDots_0
   m_TagString: Untagged
@@ -2797,3 +2882,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3483025067105103355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8992101819587999357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29202c6387b334abc1ba84466dcef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maskMode: 1
