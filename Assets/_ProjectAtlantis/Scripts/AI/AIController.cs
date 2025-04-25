@@ -142,6 +142,13 @@ public class AIController : MonoBehaviour
 
             GenerateDynamicOrbit(target);
         }
+        else if(state == AIState.Investigation && distance <= agroRange)
+        {
+            state = AIState.Agro;
+            atOrbit = false;
+            this.target = target;
+            agent.SetDestination(target);
+        }
     }
 
     private IEnumerator AIAmbientSound()
@@ -151,6 +158,21 @@ public class AIController : MonoBehaviour
             soundEmmiter.SendSound(SFXs[Random.Range(0, SFXs.Count)], soundRange);
             yield return new WaitForSeconds(Random.Range(10, 16));
         }
+    }
+
+    private IEnumerator AIDeAgro()
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < agroTime)
+        {
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        state = AIState.Patrol;
+        atOrbit = false;
+        target = PatrolPoints[currentIndex].position;
+        agent.SetDestination(target);
     }
 
     private void MoveToPoint(Vector3 target)
