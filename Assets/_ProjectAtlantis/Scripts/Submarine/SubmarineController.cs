@@ -18,10 +18,18 @@ public class SubmarineController : MonoBehaviour
     [SerializeField] private float maxY = 2f;
     [SerializeField] private float maxNegativeY = 2f;
 
-    [Header("Rotation Settings")]
-    [SerializeField] private float maxRotationAngle = 15f; // Degrees
-    [SerializeField] private float maxRotationSpeed = 0.5f; // Degrees per second
-    [SerializeField] private float torqueForce = 5f;
+    [Header("Survival")] 
+    [SerializeField] private float energy = 100;
+    [SerializeField] private int hullIntegrity = 100;
+    [SerializeField] private float energyPerSecBase = 0.05f; // need to be adjusted for balancing
+    [SerializeField] private float engineConsumptionPerSec = 0.01f;
+    public bool EngineOn { get; private set; }
+    [Header("Diesel Stats")]
+    public bool DieselEngineOn { get; private set; }
+
+    [SerializeField] private float energyPerSecGeneration = 0.5f;
+    [SerializeField] private float fuelConsumption = 10f;
+    [SerializeField] private float currentFuel = 300;
 
     private InputAction move;
     private InputAction rotate;
@@ -100,6 +108,31 @@ public class SubmarineController : MonoBehaviour
         }
     }
 
+    private void EngineHandler()
+    {
+        if (!DieselEngineOn)
+        {
+            SubmarineSoundsManager.Instance.EmitElectricEngine();
+            energy -= (energyPerSecBase + engineConsumptionPerSec) * Time.deltaTime;
+        }
+        else
+        {
+            SubmarineSoundsManager.Instance.EmitDieselEngine();
+            energy += energyPerSecGeneration * Time.deltaTime;
+            currentFuel -= fuelConsumption * Time.deltaTime;
+        }
+    }
+
+    public void ToggleEngine()
+    {
+        EngineOn = !EngineOn;
+    }
+
+    public void ToggleDiesel()
+    {
+        DieselEngineOn = !DieselEngineOn;
+    }
+
     private void OnTriggerStay2D(Collider2D other)
     {
         if(other.tag == "Finish")
@@ -116,52 +149,24 @@ public class SubmarineController : MonoBehaviour
         PingDisplayHandler.Instance.CrazynessFactor = 0.15f;
     }
 
-    //void Rotate()
-    //{
-    //    float rotateInput = rotate.ReadValue<Vector2>().x;
-    //    float currentZRotation = NormalizeAngle(transform.eulerAngles.z);
-    //    Debug.Log($"Rotation {transform.eulerAngles.z}, Normalized {currentZRotation}");
+    private void OnCollisionEnter2D(Collision2D other) // TODO: Tweak numbers so collision would create decent noise if close to the monster
+    {
+        if(other.gameObject.tag != "Monster")
+        {
+            SubmarineSoundsManager.Instance.EmitCollision(rb.linearVelocity.magnitude / 2f * 120f);
+            Debug.Log(rb.linearVelocity.magnitude / 2f * 120f);
 
-    //    float rotationLimit = maxRotationAngle;
-    //    float relativeRotation = Mathf.Abs(currentZRotation) / rotationLimit;
-    //    float normalizedDistance = 0f;
+            hullIntegrity -= Random.Range(5, 10);
+        }
+        else
+        {
+            hullIntegrity = 0;
+        }
 
-    //    if(relativeRotation <= 0f)
-    //        normalizedDistance = 1f - relativeRotation;
-    //    else
-    //    {
-    //        normalizedDistance = relativeRotation - 1f;
-    //    }
-
-    //    //bool atPositiveLimit = currentZRotation >= rotationLimit && rotateInput > 0;
-    //    //bool atNegativeLimit = currentZRotation <= -rotationLimit && rotateInput < 0;
-
-    //    bool atPositiveLimit = currentZRotation >= rotationLimit;
-    //    bool atNegativeLimit = currentZRotation <= -rotationLimit;
-
-    //    if (!atPositiveLimit && !atNegativeLimit)
-    //    {
-    //        float torque = rotateInput * torqueForce * normalizedDistance;
-    //        rb.AddTorque(torque, ForceMode2D.Force);
-    //    }
-    //    else
-    //    {
-    //        float torque = 0f;
-
-    //        if (atPositiveLimit)
-    //            torque = -1 * torqueForce * normalizedDistance;
-
-    //        if (atNegativeLimit)
-    //            torque = 1 * torqueForce * normalizedDistance;
-
-    //        rb.AddTorque(-torque, ForceMode2D.Force);
-    //    }
-    //}
-
-    //float NormalizeAngle(float angle)
-    //{
-    //    angle %= 360;
-    //    if (angle > 180) angle -= 360;
-    //    return angle;
-    //}
+        if (hullIntegrity <= 0)
+        {
+            // Handle game over here
+            Debug.Log("You are dead");
+        }
+    }
 }
