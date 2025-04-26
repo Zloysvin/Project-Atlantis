@@ -47,7 +47,7 @@ public class SubmarineSoundsManager : MonoBehaviour
 
     public void EmitElectricEngine()
     {
-        Debug.Log(ElectricEngine.isPlaying);
+        //Debug.Log(ElectricEngine.isPlaying);
         if(ElectricEngine.time >= ElectricEngine.clip.length)
         {
             ElectricEngine.Play();

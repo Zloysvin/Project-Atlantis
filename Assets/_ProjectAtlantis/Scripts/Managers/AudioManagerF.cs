@@ -12,6 +12,8 @@ public class AudioManagerF : MonoBehaviour
     [SerializeField] AudioClip buttonHoveredClip;
     [SerializeField] AudioClip beaconDroppedClip;
     [SerializeField] AudioClip logEntryNormalClip;
+    [SerializeField] AudioClip logEntryWarningClip;
+    [SerializeField] AudioClip logEntryDangerClip;
 
     private void Awake()
     {
@@ -49,6 +51,16 @@ public class AudioManagerF : MonoBehaviour
     public void PlayLogEntryNormalSound()
     {
         logSource.clip = logEntryNormalClip;
+        logSource.Play();
+    }
+    public void PlayLogEntryWarningSound()
+    {
+        logSource.clip = logEntryWarningClip;
+        logSource.Play();
+    }
+    public void PlayLogEntryDangerSound()
+    {
+        logSource.clip = logEntryDangerClip;
         logSource.Play();
     }
     #endregion

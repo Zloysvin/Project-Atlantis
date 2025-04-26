@@ -47,7 +47,7 @@ public class SubmarineSoundEmmiter : MonoBehaviour, ISoundSystemMember
             if (path.corners.Length == 0)
                 totalDistance = Vector2.Distance(transform.position, sender.Transform.position);
 
-            sender.Audio.volume = (100f - totalDistance / (distance / 100f))/100f;
+            sender.Audio.volume = (100f - totalDistance / (distance  * 0.01f)) * 0.01f;
 
             sender.PlaySound();
 

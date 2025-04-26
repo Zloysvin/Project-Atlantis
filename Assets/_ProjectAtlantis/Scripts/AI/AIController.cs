@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using static UnityEngine.GraphicsBuffer;
 
+[SelectionBase]
 public class AIController : MonoBehaviour
 {
     public enum AIState
@@ -50,11 +50,15 @@ public class AIController : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     private void Start()
     {
         target = PatrolPoints[currentIndex].position;
+        PatrolPoints[currentIndex].parent.parent = null;
+        transform.right = (target - transform.position).normalized;
         agent.SetDestination(target);
         orbitPositions = new List<Vector3>();
         soundEmmiter = GetComponent<MonsterSoundEmmiter>();
@@ -80,7 +84,8 @@ public class AIController : MonoBehaviour
 
                 target = PatrolPoints[currentIndex].position;
                 agent.SetDestination(target);
-                transform.right = new Vector3(agent.velocity.x, agent.velocity.y) + transform.position;
+                //transform.right = new Vector3(agent.velocity.x, agent.velocity.y) + transform.position;
+                transform.right = (target - transform.position).normalized;
 
                 atTarget = false;
             }

@@ -17,6 +17,7 @@ public class LogEntryController : MonoBehaviour
             Destroy(this);
     }
 
+
     public void AddLogEntry(string entry, LogEntryMode mode = LogEntryMode.Normal)
     {
         Transform currentEntry = log.GetChild(log.childCount - 1);
@@ -69,6 +70,10 @@ public class LogEntryController : MonoBehaviour
         }
         currentLogLine.text = $"<color={ColorToHex(c)}>{text}</color>";
     }
+    public void UpdateCurrentLogLine(string text)
+    {
+        currentLogLine.text = $"<color={ColorToHex(logNormalColor)}>{text}</color>";
+    }
 
     private string ColorToHex(Color color)
     {
@@ -80,6 +85,45 @@ public class LogEntryController : MonoBehaviour
     {
         currentLogLine.text = "[...]";
     }
+
+    #region QuickMethods
+
+    public void AddLogEntryNormal(string entry)
+    {
+        Transform currentEntry = log.GetChild(log.childCount - 1);
+        TextMeshProUGUI text = currentEntry.GetComponent<TextMeshProUGUI>();
+
+        text.text = $"<color={ColorToHex(logNormalColor)}>{entry}</color>";
+        currentEntry.SetAsFirstSibling();
+
+        AudioManagerF.Instance.PlayLogEntryNormalSound();
+    }
+    public void AddLogEntryWarning(string entry)
+    {
+        Transform currentEntry = log.GetChild(log.childCount - 1);
+        TextMeshProUGUI text = currentEntry.GetComponent<TextMeshProUGUI>();
+
+
+        text.text = $"<color={ColorToHex(logWarningColor)}>{entry}</color>";
+        currentEntry.SetAsFirstSibling();
+
+        AudioManagerF.Instance.PlayLogEntryWarningSound();
+    }
+    public void AddLogEntryDanger(string entry)
+    {
+        Transform currentEntry = log.GetChild(log.childCount - 1);
+        TextMeshProUGUI text = currentEntry.GetComponent<TextMeshProUGUI>();
+
+        text.text = $"<color={ColorToHex(logDangerColor)}>{entry}</color>";
+        currentEntry.SetAsFirstSibling();
+
+        AudioManagerF.Instance.PlayLogEntryDangerSound();
+    }
+
+
+    #endregion
+
+
 }
 
 public enum LogEntryMode

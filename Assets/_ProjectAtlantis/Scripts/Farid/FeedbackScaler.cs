@@ -17,7 +17,7 @@ public class FeedbackScaler : MonoBehaviour
         endPos.x *= endPosition.x;
         endPos.y *= endPosition.y;
         endPos.z *= endPosition.z;
-        Vector3 startPos = transform.localPosition;
+        Vector3 startPos = transform.localScale;
         startPos.x *= fromPosition.x;
         startPos.y *= fromPosition.y;
         startPos.z *= fromPosition.z;

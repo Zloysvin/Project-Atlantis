@@ -12,6 +12,7 @@ public class StyleController : MonoBehaviour
     [SerializeField] Material uiBase;
     [SerializeField] Material depthMeter;
     [SerializeField] Material player;
+    [SerializeField] Material playerCollision;
     [SerializeField] Material enviornment;
     [SerializeField] Material ping;
 
@@ -75,6 +76,7 @@ public class StyleController : MonoBehaviour
         uiBase.SetColor("_Color", uiBaseColor);
         depthMeter.SetColor("_Color", depthMeterColor);
         player.SetColor("_Color", playerColor);
+        playerCollision.SetColor("_Color", playerColor);
         enviornment.SetColor("_Color", enviornmentColor);
         ping.SetColor("_Color", pingColor);
 
@@ -113,6 +115,7 @@ public class StyleController : MonoBehaviour
         uiBase.SetColor("_Color", uiBaseOld);
         depthMeter.SetColor("_Color", depthMeterOld);
         player.SetColor("_Color", playerOld);
+        playerCollision.SetColor("_Color", playerOld);
         enviornment.SetColor("_Color", enviornmentOld);
         ping.SetColor("_Color", pingOld);
         recordedColors = false;

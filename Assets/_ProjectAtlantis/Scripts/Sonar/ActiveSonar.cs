@@ -18,7 +18,7 @@ public class ActiveSonar : MonoBehaviour
     {
         soundEmmiter = GetComponent<SubmarineSoundEmmiter>();
 
-        StartCoroutine("Sonar");
+        StartCoroutine(Sonar());
 
         IsPassiveSonar = false;
     }
@@ -29,9 +29,10 @@ public class ActiveSonar : MonoBehaviour
         {
             if(!IsPassiveSonar)
             {
+                PingDisplayHandler.Instance.DisplaySonarRing(sonarTime, 4, transform.position);
                 // Sonar logic goes here
 
-                Debug.Log("Sonar Active");
+                //Debug.Log("Sonar Active");
 
                 while (currentEmitterAngle < 360f)
                 {
@@ -58,8 +59,8 @@ public class ActiveSonar : MonoBehaviour
     }
 
     [ContextMenu("ToggleSonar")]
-    public void ToggleSonar()
+    public void TurnOnSonar(bool status)
     {
-        IsPassiveSonar = !IsPassiveSonar;
+        IsPassiveSonar = status;
     }
 }

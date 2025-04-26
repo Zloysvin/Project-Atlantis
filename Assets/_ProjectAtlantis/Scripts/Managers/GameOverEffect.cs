@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GameOverEffect : MonoBehaviour
 {
+    public static GameOverEffect Instance;
     [SerializeField] private float reloadDuration = 2f;
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private Material screenOverlay;
@@ -13,6 +14,12 @@ public class GameOverEffect : MonoBehaviour
     [SerializeField] private Vector2Int pixelationAmountRange = new Vector2Int(4, 120);
 
     private bool isBusy;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(this);
+    }
 
     private void Start()
     {

@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 2908327920977813629}
   m_Layer: 0
   m_Name: MonsterEyeWorm
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

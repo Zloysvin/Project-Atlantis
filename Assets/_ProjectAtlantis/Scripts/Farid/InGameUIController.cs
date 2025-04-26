@@ -20,6 +20,22 @@ public class InGameUIController : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI fuelLeftInfo;
 
+    [Header("Material infos:")]
+    [SerializeField] Material buttonFGMat;
+    [SerializeField] Material buttonBGMat;
+    [SerializeField] Material buttonHighlightMat;
+    [Header("Engine On related:")]
+    [SerializeField] TextMeshProUGUI engineStatusInfo;
+    [SerializeField] Image engineButtonImage;
+    [SerializeField] Image engineIconImage;
+
+    [Header("Sonar modes related:")]
+    [SerializeField] TextMeshProUGUI sonarStatusInfo;
+    [SerializeField] Image sonarListenButtonImage;
+    [SerializeField] Image sonarListenButtonIcon;
+    [SerializeField] Image sonarActiveButtonImage;
+    [SerializeField] Image sonarActiveButtonIcon;
+
     [Header("PauseMenu:")]
     [SerializeField] RectTransform pauseMenuRect;
     [SerializeField] Sprite normalIcon;
@@ -32,9 +48,12 @@ public class InGameUIController : MonoBehaviour
     [SerializeField] Slider volumeSlider;
 
     StatsFaker playerStats;
-
+    SubmarineController player;
+    ActiveSonar sonar;
     private void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<SubmarineController>();
+        sonar = GameObject.FindGameObjectWithTag("Player").GetComponent<ActiveSonar>();
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<StatsFaker>();
         playerStats.OnFakeStatsChanged += UpdateFakeStats;
         playerStats.OnSpeedChanged += UpdateSpeed;
@@ -59,6 +78,7 @@ public class InGameUIController : MonoBehaviour
     private void FixedUpdate()
     {
         timeInfo.text = DateTime.Now.ToString();
+        energyInfo.text = $"Energy:{player.energy:0.0}%";
     }
 
     private void OnDisable()
@@ -92,10 +112,82 @@ public class InGameUIController : MonoBehaviour
     {
         //float dB = Mathf.Log10(Mathf.Clamp(ratio, 0.0001f, 1f)) * 20f;
         float dB = Mathf.Lerp(minMaxDbRange.x, minMaxDbRange.y, ratio);
-        Debug.Log(dB);
         globalMixer.SetFloat("MasterVolume", dB);
     }
 
-    
-    
+    #region EngineButton
+    public void ToggleEngine()
+    {
+        player.ToggleEngine();
+        if (player.EngineOn)
+        {
+            engineButtonImage.material = buttonFGMat;
+            engineIconImage.material = buttonBGMat;
+            engineStatusInfo.text = "On";
+            LogEntryController.Instance.AddLogEntryNormal("Turned engines on.");
+        }
+        else
+        {
+            engineButtonImage.material = buttonBGMat;
+            engineIconImage.material = buttonFGMat;
+            engineStatusInfo.text = "Off";
+            LogEntryController.Instance.AddLogEntryWarning("Turned engines off!");
+        }
+    }
+    #endregion
+
+    #region SonarButtons
+    public void TurnOnSonarActiveMode()
+    {
+        sonar.TurnOnSonar(false);
+        sonarListenButtonIcon.material = buttonFGMat;
+        sonarListenButtonImage.material = buttonBGMat;
+
+        sonarActiveButtonIcon.material = buttonHighlightMat;
+        sonarActiveButtonImage.material = buttonFGMat;
+
+        sonarStatusInfo.text = "Mode: Active";
+        LogEntryController.Instance.AddLogEntryNormal("Switched sonar mode to active.");
+    }
+    public void TurnOnSonarListenMode()
+    {
+        sonar.TurnOnSonar(true);
+        sonarListenButtonIcon.material = buttonHighlightMat;
+        sonarListenButtonImage.material = buttonFGMat;
+
+        sonarActiveButtonIcon.material = buttonFGMat;
+        sonarActiveButtonImage.material = buttonBGMat;
+
+        sonarStatusInfo.text = "Mode: Listen";
+        LogEntryController.Instance.AddLogEntryNormal("Switched sonar mode to listen.");
+    }
+
+    public void UnoverSonarListenButton()
+    {
+        if (sonar.IsPassiveSonar)
+        {
+            sonarListenButtonIcon.material = buttonHighlightMat;
+            sonarListenButtonImage.material = buttonFGMat;
+        }
+        else
+        {
+            sonarListenButtonIcon.material = buttonFGMat;
+            sonarListenButtonImage.material = buttonBGMat;
+        }
+    }
+    public void UnoverSonarActiveButton()
+    {
+        if (!sonar.IsPassiveSonar)
+        {
+            sonarActiveButtonIcon.material = buttonHighlightMat;
+            sonarActiveButtonImage.material = buttonFGMat;
+        }
+        else
+        {
+            sonarActiveButtonIcon.material = buttonFGMat;
+            sonarActiveButtonImage.material = buttonBGMat;
+        }
+    }
+    #endregion
+
 }
