@@ -105,4 +105,9 @@ public class ActiveSonar : MonoBehaviour
     }
 
     #endregion
+
+    //private void OnDisable()
+    //{
+    //    StopAllCoroutines();
+    //}
 }

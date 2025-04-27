@@ -138,10 +138,10 @@ public class PingDisplayHandler : MonoBehaviour
             timer -= Time.deltaTime;
             yield return null;
         }
-        if (!player.EngineOn)
-        {
-            lineRenderer.enabled = false;
-        }
+        //if (!player.EngineIsOn)
+        //{
+        //    lineRenderer.enabled = false;
+        //}
 
         for (int i = 0; i <= segments; i++)
         {

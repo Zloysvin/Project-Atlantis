@@ -136,7 +136,7 @@ public class InGameUIController : MonoBehaviour
     }
     public void UnhoverEngineShutdownButton()
     {
-        if (player.EngineOn)
+        if (player.EngineIsOn)
         {
             engineButtonImage.material = buttonFGMat;
             engineIconImage.material = buttonBGMat;

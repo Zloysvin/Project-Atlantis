@@ -538,7 +538,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -2488,7 +2488,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -4556,7 +4556,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -5511,7 +5511,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -12150,7 +12150,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -33246,7 +33246,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -34090,7 +34090,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -37703,7 +37703,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -40811,6 +40811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521254096197040458c8f5fd2ec45748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsInvincible: 0
   ascendSpeed: 0.25
   descendSpeed: 0.75
   forwardSpeed: 0.75
@@ -41067,7 +41068,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -41792,12 +41793,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emmiter: {fileID: 8762419785711652596}
+  controller: {fileID: 4951495720887425009}
   Sonar: {fileID: 8741969118509602947}
-  SonarSoundRange: 40
-  ElectricEngine: {fileID: 1521811833032529751}
+  SonarSoundRange: 30
+  EngineSoundEmitDelay: 5
+  ElectricEngine: {fileID: 1209840847617569294}
   ElectricEngineSoundRange: 10
+  ElectricEngineSound: {fileID: 8300000, guid: 4da7df35ed467e54cad9878df2075f37, type: 3}
+  ElectricEngineStartupSound: {fileID: 8300000, guid: 635787bed91e2d94b83e3f8cac9aa076, type: 3}
+  ElectricEngineOffSound: {fileID: 8300000, guid: a43165bcc629f3841a55f4a7e62a8d94, type: 3}
   DieselEngine: {fileID: 4637945654850728463}
   DieselEngineSoundRange: 60
+  DieselEngineSound: {fileID: 8300000, guid: 51209439034c2e04b8a508b6d7eab504, type: 3}
+  DieselEngineStartupSound: {fileID: 8300000, guid: d4b04d7fef2d16e478b4e59e1585943b, type: 3}
+  DieselEngineOffSound: {fileID: 8300000, guid: df5ec3068b75ebe4ca750ac048b8f18b, type: 3}
   SubAmbienceSounds:
   - {fileID: 8300000, guid: 9fc21a2e220233e47aa311e3925c9f48, type: 3}
   - {fileID: 8300000, guid: d986c5f90639a6e43a61136db9a875b6, type: 3}

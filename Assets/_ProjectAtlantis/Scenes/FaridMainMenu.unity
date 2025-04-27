@@ -616,6 +616,7 @@ MonoBehaviour:
   - {fileID: 837578070}
   uiHeaderImages: []
   uiTopBarImages: []
+  styles: []
 --- !u!4 &263710097
 Transform:
   m_ObjectHideFlags: 0
@@ -3652,7 +3653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angleMove: 1
   sonarTime: 5
-  pingProjectile: {fileID: 612928272955933523, guid: 38a20621f3b215b4bb8bfabdd877debf, type: 3}
+  pingProjectile: {fileID: 3544554398014037996, guid: 38a20621f3b215b4bb8bfabdd877debf, type: 3}
 --- !u!82 &1674196219
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3797,7 +3798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbef7040fc6be1a4997d4e3cdb7f1329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PingPrefab: {fileID: 4696397991395347965, guid: 1de15403b4b00d946a8188171471b13d, type: 3}
+  PingPrefab: {fileID: 5306519290452874503, guid: 1de15403b4b00d946a8188171471b13d, type: 3}
   CrazynessFactor: 0.15
   segments: 40
   startCircleRadius: 0.2
@@ -4877,12 +4878,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emmiter: {fileID: 1674196220}
+  controller: {fileID: 0}
   Sonar: {fileID: 4360263741899303975}
   SonarSoundRange: 40
+  EngineSoundEmitDelay: 5
   ElectricEngine: {fileID: 5822588695529432051}
   ElectricEngineSoundRange: 10
+  ElectricEngineSound: {fileID: 0}
+  ElectricEngineStartupSound: {fileID: 0}
+  ElectricEngineOffSound: {fileID: 0}
   DieselEngine: {fileID: 400320489017231019}
   DieselEngineSoundRange: 60
+  DieselEngineSound: {fileID: 0}
+  DieselEngineStartupSound: {fileID: 0}
+  DieselEngineOffSound: {fileID: 0}
   SubAmbienceSounds:
   - {fileID: 8300000, guid: 9fc21a2e220233e47aa311e3925c9f48, type: 3}
   - {fileID: 8300000, guid: d986c5f90639a6e43a61136db9a875b6, type: 3}
