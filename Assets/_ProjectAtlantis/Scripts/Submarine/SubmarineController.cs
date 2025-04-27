@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class SubmarineController : MonoBehaviour
 {
     public InputSystem_Actions actions;
+    public bool IsInvincible = false;
 
     [Header("Speed Values")]
     [SerializeField] private float ascendSpeed = 5f;
@@ -26,7 +27,8 @@ public class SubmarineController : MonoBehaviour
     [SerializeField] private int hullIntegrity = 100;
     [SerializeField] private float energyPerSecBase = 0.05f; // need to be adjusted for balancing
     [SerializeField] private float engineConsumptionPerSec = 0.01f;
-    public bool EngineOn { get; private set; } = true;
+    public bool PickedArtifact { get; private set; }
+    public bool EngineIsOn { get; private set; } = true;
     [Header("Diesel Stats")]
     public bool DieselEngineOn { get; private set; }
 
@@ -36,11 +38,13 @@ public class SubmarineController : MonoBehaviour
 
     private InputAction move;
     private InputAction rotate;
+    private InputAction uTurn;
+    private int direactionModifier = 1;
     private Rigidbody2D rb;
 
 
     // Didnt touched the stuff above.
-    [Header("Input blocked relted")]
+    [Header("Input blocked related")]
     [SerializeField] float collisionFeedbackDuration = 0.3f;
     [SerializeField] float knockbackForce = 0.5f;
     [SerializeField] GameObject collisionModel;
@@ -57,6 +61,9 @@ public class SubmarineController : MonoBehaviour
 
         rotate = actions.Player.Rotate;
         rotate.Enable();
+
+        uTurn = actions.Player.Turn;
+        uTurn.Enable();
     }
 
     private void OnDisable()
@@ -73,10 +80,27 @@ public class SubmarineController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        SubmarineSoundsManager.Instance.StartEngine(DieselEngineOn);
+    }
+
     private void FixedUpdate()
     {
         if (isBusyColliding) return;
-        Move();
+        if (EngineIsOn)
+            Move();
+    }
+
+    private void Update()
+    {
+        EngineHandler();
+
+        if (uTurn.triggered)
+        {
+            direactionModifier *= -1;
+            transform.localScale = new Vector3(direactionModifier * transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
     }
 
     void Move()
@@ -86,11 +110,11 @@ public class SubmarineController : MonoBehaviour
 
         if (inputDirection.x > 0)
         {
-            moveDirection.x = 1 * forwardSpeed;
+            moveDirection.x = ((0.5f * (direactionModifier + 1)) * forwardSpeed) + ((0.5f * -(direactionModifier - 1)) * backwardSpeed);
         }
         else if (inputDirection.x < 0)
         {
-            moveDirection.x = -1 * backwardSpeed;
+            moveDirection.x = ((-0.5f * (direactionModifier + 1)) * backwardSpeed) + ((-0.5f * -(direactionModifier - 1)) * forwardSpeed);
         }
 
         if (inputDirection.y > 0)
@@ -105,48 +129,36 @@ public class SubmarineController : MonoBehaviour
         rb.AddForce(transform.right * moveDirection.x, ForceMode2D.Force);
         rb.AddForce(Vector2.up * moveDirection.y, ForceMode2D.Force);
 
-        //if (rb.linearVelocityX > maxX)
-        //{
-        //    rb.linearVelocityX = maxX;
-        //}
-        //else if(rb.linearVelocityX < maxNegativeX)
-        //{
-        //    rb.linearVelocityX = maxNegativeX;
-        //}
         rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, maxNegativeX, maxX);
 
-        //if (rb.linearVelocityY > maxY)
-        //{
-        //    rb.linearVelocityY = maxY;
-        //}
-        //else if (rb.linearVelocityY < maxNegativeY)
-        //{
-        //    rb.linearVelocityY = maxNegativeY;
-        //}
         rb.linearVelocityY = Mathf.Clamp(rb.linearVelocityY, maxNegativeY, maxY);
     }
-    private void Update()
-    {
-        EngineHandler();
-    }
+
     private void EngineHandler()
     {
         if (!DieselEngineOn)
         {
-            SubmarineSoundsManager.Instance.EmitElectricEngine();
             energy -= (energyPerSecBase + engineConsumptionPerSec) * Time.deltaTime;
         }
         else
         {
-            SubmarineSoundsManager.Instance.EmitDieselEngine();
-            energy += energyPerSecGeneration * Time.deltaTime;
+            energy += (energyPerSecGeneration - energyPerSecBase) * Time.deltaTime;
             currentFuel -= fuelConsumption * Time.deltaTime;
         }
     }
 
     public void ToggleEngine()
     {
-        EngineOn = !EngineOn;
+        EngineIsOn = !EngineIsOn;
+
+        if (EngineIsOn)
+        {
+            SubmarineSoundsManager.Instance.StartEngine(DieselEngineOn);
+        }
+        else
+        {
+            SubmarineSoundsManager.Instance.StopEngines(DieselEngineOn);
+        }
     }
 
     public void ToggleDiesel()
@@ -154,24 +166,42 @@ public class SubmarineController : MonoBehaviour
         DieselEngineOn = !DieselEngineOn;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "ArtifactPickup")
+        {
+            Transform parent = other.gameObject.transform.parent;
+
+            if (parent.tag == "Artifact")
+            {
+                PickedArtifact = true;
+                Destroy(parent.gameObject);
+                Destroy(other.gameObject);
+            }
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D other)
     {
         if(other.tag == "Finish")
         {
-            //Debug.Log(
-            //    $"Distance{0.15f + (1.35f * (65f - Vector2.Distance(transform.position, other.transform.position)) / 17.5f)}");
+            float triggerSize = other.transform.localScale.x;
+
+            float distanceRatio = Vector2.Distance(transform.position, other.transform.position) / triggerSize;
+
             PingDisplayHandler.Instance.CrazynessFactor =
-                0.15f + (1.35f * (65f - Vector2.Distance(transform.position, other.transform.position)) / 65f); // inperformant af...
+                0.15f + (1.35f * (1f - (distanceRatio))); // inperformant af...
+            EnviromentAmbienceController.Instance.ArtifactDistanceEffect(distanceRatio);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Finish")
+        if (other.tag == "ArtifactZone")
         {
             PingDisplayHandler.Instance.CrazynessFactor = 0.15f;
+            EnviromentAmbienceController.Instance.NormalizeSoundVolume();
         }
-       
     }
 
     private void OnCollisionEnter2D(Collision2D other) // TODO: Tweak numbers so collision would create decent noise if close to the monster
@@ -179,7 +209,6 @@ public class SubmarineController : MonoBehaviour
         if(!other.gameObject.CompareTag("Monster"))
         {
             SubmarineSoundsManager.Instance.EmitCollision(rb.linearVelocity.magnitude / 2f * 120f);
-            //Debug.Log(rb.linearVelocity.magnitude / 2f * 120f);
 
             hullIntegrity -= Random.Range(5, 10);
         }
@@ -188,12 +217,13 @@ public class SubmarineController : MonoBehaviour
             hullIntegrity = 0;
         }
 
-        if (hullIntegrity <= 0)
+        if (hullIntegrity <= 0 && !IsInvincible)
         {
             // Handle game over here
             GameOverEffect.Instance.TriggerDeathEffect();
         }
-        rb.AddForce((transform.position - other.transform.position).normalized * knockbackForce, ForceMode2D.Impulse);
+
+        rb.AddForce(((Vector2)transform.position - other.contacts[0].point).normalized * knockbackForce, ForceMode2D.Impulse);
         CollisionFeedback();
     }
 
@@ -203,9 +233,9 @@ public class SubmarineController : MonoBehaviour
     {
         if (isBusyColliding) return;
 
-        StartCoroutine(HandleCollsion());
+        StartCoroutine(HandleCollision());
     }
-    private IEnumerator HandleCollsion()
+    private IEnumerator HandleCollision()
     {
         isBusyColliding = true;
         float timer = collisionFeedbackDuration;
