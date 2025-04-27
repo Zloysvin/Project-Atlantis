@@ -18,6 +18,8 @@ public class PingDisplayHandler : MonoBehaviour
     [SerializeField] float startCircleRadius = 0f;
     LineRenderer lineRenderer;
     WaitForSeconds pingCircleUpdate = new WaitForSeconds(0.02f);
+
+    private Vector3[] expansionDirections;
     private void Awake()
     {
         if (Instance == null)
@@ -25,6 +27,14 @@ public class PingDisplayHandler : MonoBehaviour
 
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = segments + 1;
+
+        expansionDirections = new Vector3[segments];
+
+        float directionAngleChange = 360f / segments;
+        for (int i = 0; i < segments; i++)
+        {
+            expansionDirections[i] = Quaternion.AngleAxis(i * directionAngleChange, Vector3.forward) * Vector2.up;
+        }
     }
 
     public void DisplayPing(Vector2 pingPosition, Vector3 upTransform)
@@ -73,23 +83,47 @@ public class PingDisplayHandler : MonoBehaviour
     {
 
         float timer = sonarPingDuration;
-        float currenCircleRadius = startCircleRadius;
+        //float currenCircleRadius = startCircleRadius;
+
+        Vector3[] segmentPositions = new Vector3[segments + 1];
+        for (int i = 0; i < segments; i++)
+        {
+            segmentPositions[i] = startPos;
+        }
+
         while (timer > 0f)
         {
-            float angle = 0f;
+            //float angle = 0f;
             
+            //for (int i = 0; i < segments; i++)
+            //{
+            //    float x = Mathf.Cos(angle) * currenCircleRadius + startPos.x;
+            //    float y = Mathf.Sin(angle) * currenCircleRadius + startPos.y;
+            //    lineRenderer.SetPosition(i, new Vector3(x, y, 0));
+            //    angle += 2 * Mathf.PI / segments;
+            //}
+            //lineRenderer.SetPosition(lineRenderer.positionCount-1, 
+            //    new Vector3(Mathf.Cos(0) * currenCircleRadius + startPos.x, Mathf.Sin(0) * currenCircleRadius + startPos.y, 0));
+            //currenCircleRadius += circleSpeed * 0.02f;//Time.deltaTime;
+            //timer -= 0.02f;
+            //yield return pingCircleUpdate;
+
             for (int i = 0; i < segments; i++)
             {
-                float x = Mathf.Cos(angle) * currenCircleRadius + startPos.x;
-                float y = Mathf.Sin(angle) * currenCircleRadius + startPos.y;
-                lineRenderer.SetPosition(i, new Vector3(x, y, 0));
-                angle += 2 * Mathf.PI / segments;
+                segmentPositions[i] += expansionDirections[i] * circleSpeed * Time.deltaTime;
             }
-            lineRenderer.SetPosition(lineRenderer.positionCount-1, 
-                new Vector3(Mathf.Cos(0) * currenCircleRadius + startPos.x, Mathf.Sin(0) * currenCircleRadius + startPos.y, 0));
-            currenCircleRadius += circleSpeed * Time.deltaTime;
-            timer -= 0.02f;
-            yield return pingCircleUpdate;
+
+            segmentPositions[segments] = segmentPositions[0];
+
+            lineRenderer.SetPositions(segmentPositions);
+
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+
+        for (int i = 0; i <= segments; i++)
+        {
+            lineRenderer.SetPosition(i, Vector3.zero);
         }
     }
 

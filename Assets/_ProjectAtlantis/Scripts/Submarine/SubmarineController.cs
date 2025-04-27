@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class SubmarineController : MonoBehaviour
 {
     public InputSystem_Actions actions;
+    public bool IsInvincible = false;
 
     [Header("Speed Values")]
     [SerializeField] private float ascendSpeed = 5f;
@@ -26,7 +27,7 @@ public class SubmarineController : MonoBehaviour
     [SerializeField] private int hullIntegrity = 100;
     [SerializeField] private float energyPerSecBase = 0.05f; // need to be adjusted for balancing
     [SerializeField] private float engineConsumptionPerSec = 0.01f;
-    public bool EngineOn { get; private set; } = true;
+    public bool EngineIsOn { get; private set; } = true;
     [Header("Diesel Stats")]
     public bool DieselEngineOn { get; private set; }
 
@@ -40,7 +41,7 @@ public class SubmarineController : MonoBehaviour
 
 
     // Didnt touched the stuff above.
-    [Header("Input blocked relted")]
+    [Header("Input blocked related")]
     [SerializeField] float collisionFeedbackDuration = 0.3f;
     [SerializeField] float knockbackForce = 0.5f;
     [SerializeField] GameObject collisionModel;
@@ -73,10 +74,16 @@ public class SubmarineController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        SubmarineSoundsManager.Instance.StartEngine(DieselEngineOn);
+    }
+
     private void FixedUpdate()
     {
         if (isBusyColliding) return;
-        Move();
+        if (EngineIsOn)
+            Move();
     }
 
     void Move()
@@ -105,24 +112,8 @@ public class SubmarineController : MonoBehaviour
         rb.AddForce(transform.right * moveDirection.x, ForceMode2D.Force);
         rb.AddForce(Vector2.up * moveDirection.y, ForceMode2D.Force);
 
-        //if (rb.linearVelocityX > maxX)
-        //{
-        //    rb.linearVelocityX = maxX;
-        //}
-        //else if(rb.linearVelocityX < maxNegativeX)
-        //{
-        //    rb.linearVelocityX = maxNegativeX;
-        //}
         rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, maxNegativeX, maxX);
 
-        //if (rb.linearVelocityY > maxY)
-        //{
-        //    rb.linearVelocityY = maxY;
-        //}
-        //else if (rb.linearVelocityY < maxNegativeY)
-        //{
-        //    rb.linearVelocityY = maxNegativeY;
-        //}
         rb.linearVelocityY = Mathf.Clamp(rb.linearVelocityY, maxNegativeY, maxY);
     }
     private void Update()
@@ -133,20 +124,27 @@ public class SubmarineController : MonoBehaviour
     {
         if (!DieselEngineOn)
         {
-            SubmarineSoundsManager.Instance.EmitElectricEngine();
             energy -= (energyPerSecBase + engineConsumptionPerSec) * Time.deltaTime;
         }
         else
         {
-            SubmarineSoundsManager.Instance.EmitDieselEngine();
-            energy += energyPerSecGeneration * Time.deltaTime;
+            energy += (energyPerSecGeneration - energyPerSecBase) * Time.deltaTime;
             currentFuel -= fuelConsumption * Time.deltaTime;
         }
     }
 
     public void ToggleEngine()
     {
-        EngineOn = !EngineOn;
+        EngineIsOn = !EngineIsOn;
+
+        if (EngineIsOn)
+        {
+            SubmarineSoundsManager.Instance.StartEngine(DieselEngineOn);
+        }
+        else
+        {
+            SubmarineSoundsManager.Instance.StopEngines(DieselEngineOn);
+        }
     }
 
     public void ToggleDiesel()
@@ -158,10 +156,9 @@ public class SubmarineController : MonoBehaviour
     {
         if(other.tag == "Finish")
         {
-            //Debug.Log(
-            //    $"Distance{0.15f + (1.35f * (65f - Vector2.Distance(transform.position, other.transform.position)) / 17.5f)}");
+            float triggerSize = other.transform.localScale.x;
             PingDisplayHandler.Instance.CrazynessFactor =
-                0.15f + (1.35f * (65f - Vector2.Distance(transform.position, other.transform.position)) / 65f); // inperformant af...
+                0.15f + (1.35f * (1f - (Vector2.Distance(transform.position, other.transform.position) / triggerSize))); // inperformant af...
         }
     }
 
@@ -179,7 +176,6 @@ public class SubmarineController : MonoBehaviour
         if(!other.gameObject.CompareTag("Monster"))
         {
             SubmarineSoundsManager.Instance.EmitCollision(rb.linearVelocity.magnitude / 2f * 120f);
-            //Debug.Log(rb.linearVelocity.magnitude / 2f * 120f);
 
             hullIntegrity -= Random.Range(5, 10);
         }
@@ -193,7 +189,8 @@ public class SubmarineController : MonoBehaviour
             // Handle game over here
             GameOverEffect.Instance.TriggerDeathEffect();
         }
-        rb.AddForce((transform.position - other.transform.position).normalized * knockbackForce, ForceMode2D.Impulse);
+
+        rb.AddForce(((Vector2)transform.position - other.contacts[0].point).normalized * knockbackForce, ForceMode2D.Impulse);
         CollisionFeedback();
     }
 
@@ -203,9 +200,9 @@ public class SubmarineController : MonoBehaviour
     {
         if (isBusyColliding) return;
 
-        StartCoroutine(HandleCollsion());
+        StartCoroutine(HandleCollision());
     }
-    private IEnumerator HandleCollsion()
+    private IEnumerator HandleCollision()
     {
         isBusyColliding = true;
         float timer = collisionFeedbackDuration;
