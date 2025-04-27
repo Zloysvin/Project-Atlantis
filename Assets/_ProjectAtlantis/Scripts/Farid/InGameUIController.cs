@@ -158,8 +158,8 @@ public class InGameUIController : MonoBehaviour
         sonarActiveButtonIcon.material = buttonFGMat;
         sonarActiveButtonImage.material = buttonBGMat;
 
-        sonarStatusInfo.text = "Mode: Listen";
-        LogEntryController.Instance.AddLogEntryNormal("Switched sonar mode to listen.");
+        sonarStatusInfo.text = "Mode: Passive";
+        LogEntryController.Instance.AddLogEntryNormal("Switched sonar mode to passive.");
     }
 
     public void UnoverSonarListenButton()

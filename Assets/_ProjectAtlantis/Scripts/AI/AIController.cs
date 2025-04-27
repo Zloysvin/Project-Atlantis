@@ -142,7 +142,14 @@ public class AIController : MonoBehaviour
 
     public void CheckAgro(Vector3 target, float distance)
     {
-        if (distance <= interestRange)
+        if (state == AIState.Investigation && distance <= agroRange)
+        {
+            state = AIState.Agro;
+            atOrbit = false;
+            this.target = target;
+            agent.SetDestination(target);
+        }
+        else if (distance <= interestRange)
         {
             state = AIState.Investigation;
             atOrbit = false;
@@ -150,13 +157,6 @@ public class AIController : MonoBehaviour
             agent.SetDestination(target);
 
             GenerateDynamicOrbit(target);
-        }
-        else if(state == AIState.Investigation && distance <= agroRange)
-        {
-            state = AIState.Agro;
-            atOrbit = false;
-            this.target = target;
-            agent.SetDestination(target);
         }
     }
 

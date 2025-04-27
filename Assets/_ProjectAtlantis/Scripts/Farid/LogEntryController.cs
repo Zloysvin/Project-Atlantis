@@ -96,7 +96,7 @@ public class LogEntryController : MonoBehaviour
         text.text = $"<color={ColorToHex(logNormalColor)}>{entry}</color>";
         currentEntry.SetAsFirstSibling();
 
-        AudioManagerF.Instance.PlayLogEntryNormalSound();
+        //AudioManagerF.Instance.PlayLogEntryNormalSound();
     }
     public void AddLogEntryWarning(string entry)
     {

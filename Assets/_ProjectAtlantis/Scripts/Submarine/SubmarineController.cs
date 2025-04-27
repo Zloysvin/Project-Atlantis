@@ -27,6 +27,7 @@ public class SubmarineController : MonoBehaviour
     [SerializeField] private int hullIntegrity = 100;
     [SerializeField] private float energyPerSecBase = 0.05f; // need to be adjusted for balancing
     [SerializeField] private float engineConsumptionPerSec = 0.01f;
+    public bool PickedArtifact { get; private set; }
     public bool EngineIsOn { get; private set; } = true;
     [Header("Diesel Stats")]
     public bool DieselEngineOn { get; private set; }
@@ -37,6 +38,8 @@ public class SubmarineController : MonoBehaviour
 
     private InputAction move;
     private InputAction rotate;
+    private InputAction uTurn;
+    private int direactionModifier = 1;
     private Rigidbody2D rb;
 
 
@@ -58,6 +61,9 @@ public class SubmarineController : MonoBehaviour
 
         rotate = actions.Player.Rotate;
         rotate.Enable();
+
+        uTurn = actions.Player.Turn;
+        uTurn.Enable();
     }
 
     private void OnDisable()
@@ -86,6 +92,17 @@ public class SubmarineController : MonoBehaviour
             Move();
     }
 
+    private void Update()
+    {
+        EngineHandler();
+
+        if (uTurn.triggered)
+        {
+            direactionModifier *= -1;
+            transform.localScale = new Vector3(direactionModifier * transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
+    }
+
     void Move()
     {
         Vector2 inputDirection = move.ReadValue<Vector2>();
@@ -93,11 +110,11 @@ public class SubmarineController : MonoBehaviour
 
         if (inputDirection.x > 0)
         {
-            moveDirection.x = 1 * forwardSpeed;
+            moveDirection.x = ((0.5f * (direactionModifier + 1)) * forwardSpeed) + ((0.5f * -(direactionModifier - 1)) * backwardSpeed);
         }
         else if (inputDirection.x < 0)
         {
-            moveDirection.x = -1 * backwardSpeed;
+            moveDirection.x = ((-0.5f * (direactionModifier + 1)) * backwardSpeed) + ((-0.5f * -(direactionModifier - 1)) * forwardSpeed);
         }
 
         if (inputDirection.y > 0)
@@ -116,10 +133,7 @@ public class SubmarineController : MonoBehaviour
 
         rb.linearVelocityY = Mathf.Clamp(rb.linearVelocityY, maxNegativeY, maxY);
     }
-    private void Update()
-    {
-        EngineHandler();
-    }
+
     private void EngineHandler()
     {
         if (!DieselEngineOn)
@@ -152,23 +166,42 @@ public class SubmarineController : MonoBehaviour
         DieselEngineOn = !DieselEngineOn;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "ArtifactPickup")
+        {
+            Transform parent = other.gameObject.transform.parent;
+
+            if (parent.tag == "Artifact")
+            {
+                PickedArtifact = true;
+                Destroy(parent.gameObject);
+                Destroy(other.gameObject);
+            }
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D other)
     {
         if(other.tag == "Finish")
         {
             float triggerSize = other.transform.localScale.x;
+
+            float distanceRatio = Vector2.Distance(transform.position, other.transform.position) / triggerSize;
+
             PingDisplayHandler.Instance.CrazynessFactor =
-                0.15f + (1.35f * (1f - (Vector2.Distance(transform.position, other.transform.position) / triggerSize))); // inperformant af...
+                0.15f + (1.35f * (1f - (distanceRatio))); // inperformant af...
+            EnviromentAmbienceController.Instance.ArtifactDistanceEffect(distanceRatio);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Finish")
+        if (other.tag == "ArtifactZone")
         {
             PingDisplayHandler.Instance.CrazynessFactor = 0.15f;
+            EnviromentAmbienceController.Instance.NormalizeSoundVolume();
         }
-       
     }
 
     private void OnCollisionEnter2D(Collision2D other) // TODO: Tweak numbers so collision would create decent noise if close to the monster
@@ -184,7 +217,7 @@ public class SubmarineController : MonoBehaviour
             hullIntegrity = 0;
         }
 
-        if (hullIntegrity <= 0)
+        if (hullIntegrity <= 0 && !IsInvincible)
         {
             // Handle game over here
             GameOverEffect.Instance.TriggerDeathEffect();
