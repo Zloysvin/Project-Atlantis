@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4008480009839919103}
   - component: {fileID: 753775590099828666}
   - component: {fileID: 6955955574885217172}
+  - component: {fileID: 7465555982050218458}
   m_Layer: 0
   m_Name: DecorationsOutline_Spike
   m_TagString: Untagged
@@ -182,6 +183,22 @@ PolygonCollider2D:
       - {x: -0.17, y: 0.07}
       - {x: -0.16, y: 0.07}
   m_UseDelaunayMesh: 0
+--- !u!114 &7465555982050218458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480190584462520754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2245410503739547588
 GameObject:
   m_ObjectHideFlags: 0

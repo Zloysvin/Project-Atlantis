@@ -134,6 +134,19 @@ public class InGameUIController : MonoBehaviour
             LogEntryController.Instance.AddLogEntryWarning("Turned engines off!");
         }
     }
+    public void UnhoverEngineShutdownButton()
+    {
+        if (player.EngineOn)
+        {
+            engineButtonImage.material = buttonFGMat;
+            engineIconImage.material = buttonBGMat;
+        }
+        else
+        {
+            engineButtonImage.material = buttonBGMat;
+            engineIconImage.material = buttonFGMat;
+        }
+    }
     #endregion
 
     #region SonarButtons

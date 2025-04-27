@@ -1,15 +1,20 @@
-using TMPro;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ColorPallette", menuName = "Scriptable Objects/ColorPallette")]
 public class ColorPallette : ScriptableObject
 {
-    [Header("Fonts:")]
-    [SerializeField] public TMP_FontAsset PrimaryFont;
-    [SerializeField] public TMP_FontAsset SecondaryFont;
-    [Header("Colors:")]
-    [SerializeField] public Color PrimaryColor = Color.white;
-    [SerializeField] public Color SecondaryColor = Color.black;
-    [SerializeField] public Color TertiaryColor = Color.blue;
-    [SerializeField] public Color QuadColor = Color.green;
+    [Header("New Colors:")]
+    [SerializeField] public Color buttonFGColor = Color.green;
+
+    [SerializeField] public Color buttonBGColor = Color.black;
+    [SerializeField] public Color buttonHighlightColor = Color.yellow;
+    [SerializeField] public Color uiBaseColor = Color.blue;
+    [SerializeField] public Color uiBaseColorBG = Color.black;
+    [SerializeField] public Color uiHeaderColor = Color.green;
+    [SerializeField] public Color depthMeterColor = Color.green;
+    [SerializeField] public Color playerColor = Color.green;
+    [SerializeField] public Color enviornmentColor = Color.blue;
+    [SerializeField] public Color pingColor = Color.green;
+    [SerializeField] public Color textHeaderColor = Color.green;
+    [SerializeField] public Color textInfoColor = Color.green;
 }

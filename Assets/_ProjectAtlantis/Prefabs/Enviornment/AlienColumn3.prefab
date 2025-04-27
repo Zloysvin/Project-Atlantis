@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 3496299008828290190}
   - component: {fileID: 8841438935161685835}
   - component: {fileID: 273227736336044318}
+  - component: {fileID: 4337483536181851984}
   m_Layer: 0
   m_Name: AlienColumn3
   m_TagString: Untagged
@@ -245,3 +246,19 @@ PolygonCollider2D:
       - {x: 0.45, y: 1.1}
       - {x: -0.44, y: 1.1}
   m_UseDelaunayMesh: 0
+--- !u!114 &4337483536181851984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8175524241592053708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

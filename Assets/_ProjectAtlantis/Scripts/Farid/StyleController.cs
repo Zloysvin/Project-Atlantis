@@ -47,6 +47,11 @@ public class StyleController : MonoBehaviour
     Color enviornmentOld;
     Color pingOld;
     bool recordedColors;
+
+
+    [SerializeField] ColorPallette[] styles;
+    int currentStyleIndex = 0;
+
     private void Awake()
     {
         keepChangesAfterGameMode = false;
