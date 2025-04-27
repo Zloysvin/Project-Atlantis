@@ -44,17 +44,5 @@ public class BeaconController : MonoBehaviour
 
     public void DisplayCurrentLogLine()
     {
-        if (currentBeacons <= 0)
-        {
-            LogEntryController.Instance.UpdateCurrentLogLine("[No beacons left!]", LogEntryMode.Danger);
-        }
-        else if (currentBeacons < 4)
-        {
-            LogEntryController.Instance.UpdateCurrentLogLine($"[Launch beacon at: {StatsFaker.Instance.GetCurrentCoordinates()}]", LogEntryMode.Warning);
-        }
-        else
-        {
-            LogEntryController.Instance.UpdateCurrentLogLine($"[Launch beacon at: {StatsFaker.Instance.GetCurrentCoordinates()}]");
-        }
     }
 }

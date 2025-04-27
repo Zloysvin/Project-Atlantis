@@ -24,6 +24,7 @@ public class SubmarineController : MonoBehaviour
 
     [Header("Survival")] 
     [SerializeField] public float energy = 100;
+    [SerializeField] public float maxEnergy = 100;
     [SerializeField] private int hullIntegrity = 100;
     [SerializeField] private float energyPerSecBase = 0.05f; // need to be adjusted for balancing
     [SerializeField] private float engineConsumptionPerSec = 0.01f;
@@ -129,7 +130,14 @@ public class SubmarineController : MonoBehaviour
         rb.AddForce(transform.right * moveDirection.x, ForceMode2D.Force);
         rb.AddForce(Vector2.up * moveDirection.y, ForceMode2D.Force);
 
-        rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, maxNegativeX, maxX);
+        if(direactionModifier > 0)
+        {
+            rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, maxNegativeX, maxX);
+        }
+        else if (direactionModifier < 0)
+        {
+            rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -maxX, -maxNegativeX);
+        }
 
         rb.linearVelocityY = Mathf.Clamp(rb.linearVelocityY, maxNegativeY, maxY);
     }
@@ -138,12 +146,30 @@ public class SubmarineController : MonoBehaviour
     {
         if (!DieselEngineOn)
         {
-            energy -= (energyPerSecBase + engineConsumptionPerSec) * Time.deltaTime;
+            if (EngineIsOn)
+            {
+                energy -= (energyPerSecBase + engineConsumptionPerSec) * Time.deltaTime;
+            }
+            else
+            {
+                energy -= engineConsumptionPerSec * Time.deltaTime;
+            }
+            
         }
         else
         {
             energy += (energyPerSecGeneration - energyPerSecBase) * Time.deltaTime;
             currentFuel -= fuelConsumption * Time.deltaTime;
+        }
+
+        NarrationManager.Instance.EnergyWarning(energy);
+
+
+        if (energy <= 0)
+        {
+            GameOverEffect.Instance.TriggerDeathEffect();
+            var sonar = GetComponent<ActiveSonar>();
+            sonar.TurnOnSonar(false);
         }
     }
 
@@ -177,13 +203,25 @@ public class SubmarineController : MonoBehaviour
                 PickedArtifact = true;
                 Destroy(parent.gameObject);
                 Destroy(other.gameObject);
+
+                LogEntryController.Instance.AddLogEntry("Artifact Was Successfully Collected! RTB!");
             }
+        }
+        else if (other.tag == "ArtifactZone")
+        {
+            LogEntryController.Instance.AddLogEntry("Warning! Entering Anomalous Zone", LogEntryMode.Warning);
+        }
+        else if(other.tag == "Finish" && PickedArtifact)
+        {
+            GameOverEffect.Instance.TriggerFinishEffect();
+            var sonar = GetComponent<ActiveSonar>();
+            sonar.TurnOnSonar(false);
         }
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if(other.tag == "Finish")
+        if(other.tag == "ArtifactZone")
         {
             float triggerSize = other.transform.localScale.x;
 
@@ -201,6 +239,8 @@ public class SubmarineController : MonoBehaviour
         {
             PingDisplayHandler.Instance.CrazynessFactor = 0.15f;
             EnviromentAmbienceController.Instance.NormalizeSoundVolume();
+
+            LogEntryController.Instance.AddLogEntry("Leaving Anomalous Zone", LogEntryMode.Warning);
         }
     }
 
@@ -211,6 +251,8 @@ public class SubmarineController : MonoBehaviour
             SubmarineSoundsManager.Instance.EmitCollision(rb.linearVelocity.magnitude / 2f * 120f);
 
             hullIntegrity -= Random.Range(5, 10);
+
+            NarrationManager.Instance.HullWarning(hullIntegrity);
         }
         else
         {
@@ -220,7 +262,11 @@ public class SubmarineController : MonoBehaviour
         if (hullIntegrity <= 0 && !IsInvincible)
         {
             // Handle game over here
+            
             GameOverEffect.Instance.TriggerDeathEffect();
+            var sonar = GetComponent<ActiveSonar>();
+            sonar.TurnOnSonar(false);
+
         }
 
         rb.AddForce(((Vector2)transform.position - other.contacts[0].point).normalized * knockbackForce, ForceMode2D.Impulse);

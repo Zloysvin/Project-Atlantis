@@ -10,7 +10,6 @@ public class PingDisplayHandler : MonoBehaviour
     public static PingDisplayHandler Instance;
 
     [SerializeField] private SonarPing PingPrefab;
-    ObjectPool<SonarPing> sonarPingPool;
 
     [Range(0f, 2f)]
     public float CrazynessFactor = 0.1f;
@@ -35,9 +34,6 @@ public class PingDisplayHandler : MonoBehaviour
 
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<SubmarineController>();
 
-        sonarPingPool = new ObjectPool<SonarPing>(CreateSonarPing,OnTakePingProjectileFromPool,OnReturnPingProjectileToPool,OnDestroyPingProjectile,true,
-            360,720);
-
         expansionDirections = new Vector3[segments];
 
         float directionAngleChange = 360f / segments;
@@ -57,18 +53,13 @@ public class PingDisplayHandler : MonoBehaviour
             speacialCrazyness.y = Mathf.Sin(CrazynessFactor);
         }
 
-        var tmpPing = sonarPingPool.Get();
-        tmpPing.transform.position = pingPosition + new Vector2(
+        var tmpPing = Instantiate(PingPrefab,
+            pingPosition + new Vector2(
                 Random.Range(-CrazynessFactor - speacialCrazyness.x, CrazynessFactor + speacialCrazyness.y),
-                Random.Range(-CrazynessFactor, CrazynessFactor));
-
-        //var tmpPing = Instantiate(PingPrefab,
-        //    pingPosition + new Vector2(
-        //        Random.Range(-CrazynessFactor - speacialCrazyness.x, CrazynessFactor + speacialCrazyness.y),
-        //        Random.Range(-CrazynessFactor, CrazynessFactor)), Quaternion.identity).transform;
+                Random.Range(-CrazynessFactor, CrazynessFactor)), Quaternion.identity).transform;
 
         tmpPing.transform.up = upTransform;
-        //tmpPing.transform.parent = transform;
+        tmpPing.transform.parent = transform;
 
     }
 
@@ -81,14 +72,11 @@ public class PingDisplayHandler : MonoBehaviour
             speacialCrazyness.x = Mathf.Cos(CrazynessFactor);
             speacialCrazyness.y = Mathf.Sin(CrazynessFactor);
         }
-        var ping = sonarPingPool.Get();
-        ping.transform.position = pingPosition + new Vector2(
+
+        Instantiate(PingPrefab,
+            pingPosition + new Vector2(
                 Random.Range(-CrazynessFactor - speacialCrazyness.x, CrazynessFactor + speacialCrazyness.y),
-                Random.Range(-CrazynessFactor, CrazynessFactor));
-        //Instantiate(PingPrefab,
-        //    pingPosition + new Vector2(
-        //        Random.Range(-CrazynessFactor - speacialCrazyness.x, CrazynessFactor + speacialCrazyness.y),
-        //        Random.Range(-CrazynessFactor, CrazynessFactor)), Quaternion.identity);
+                Random.Range(-CrazynessFactor, CrazynessFactor)), Quaternion.identity);
     }
 
     public void DisplaySonarRing(float sonarPingDuration, float circleSpeed,Vector2 startPos)
@@ -111,21 +99,6 @@ public class PingDisplayHandler : MonoBehaviour
 
         while (timer > 0f)
         {
-            //float angle = 0f;
-            
-            //for (int i = 0; i < segments; i++)
-            //{
-            //    float x = Mathf.Cos(angle) * currenCircleRadius + startPos.x;
-            //    float y = Mathf.Sin(angle) * currenCircleRadius + startPos.y;
-            //    lineRenderer.SetPosition(i, new Vector3(x, y, 0));
-            //    angle += 2 * Mathf.PI / segments;
-            //}
-            //lineRenderer.SetPosition(lineRenderer.positionCount-1, 
-            //    new Vector3(Mathf.Cos(0) * currenCircleRadius + startPos.x, Mathf.Sin(0) * currenCircleRadius + startPos.y, 0));
-            //currenCircleRadius += circleSpeed * 0.02f;//Time.deltaTime;
-            //timer -= 0.02f;
-            //yield return pingCircleUpdate;
-
             for (int i = 0; i < segments; i++)
             {
                 segmentPositions[i] += expansionDirections[i] * circleSpeed * Time.deltaTime;
@@ -138,10 +111,6 @@ public class PingDisplayHandler : MonoBehaviour
             timer -= Time.deltaTime;
             yield return null;
         }
-        //if (!player.EngineIsOn)
-        //{
-        //    lineRenderer.enabled = false;
-        //}
 
         for (int i = 0; i <= segments; i++)
         {
@@ -161,36 +130,4 @@ public class PingDisplayHandler : MonoBehaviour
             angle += 2 * Mathf.PI / segments;
         }
     }
-
-    #region SonarPingPool
-
-    private SonarPing CreateSonarPing()
-    {
-        SonarPing ping = Instantiate(PingPrefab, transform.position, Quaternion.identity);
-        ping.SetPool(sonarPingPool);
-        ping.transform.parent = transform;
-
-        return ping;
-    }
-
-    private void OnTakePingProjectileFromPool(SonarPing ping)
-    {
-        //ping.transform.position = transform.position;
-        //ping.transform.rotation = Quaternion.identity;
-
-        ping.gameObject.SetActive(true);
-    }
-
-    private void OnReturnPingProjectileToPool(SonarPing ping)
-    {
-        ping.gameObject.SetActive(false);
-    }
-
-    // Whats happening when the object is destroyed instead of being send back to the pool.
-    private void OnDestroyPingProjectile(SonarPing ping)
-    {
-        Destroy(ping.gameObject);
-    }
-
-    #endregion
 }

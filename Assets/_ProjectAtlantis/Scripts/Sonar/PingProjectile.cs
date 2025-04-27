@@ -24,27 +24,12 @@ public class PingProjectile : MonoBehaviour
     private IEnumerator DeathTimer()
     {
         yield return new WaitForSeconds(deathTime);
-        //Destroy(gameObject);
-        if (!gotReleased)
-        {
-            pingPool.Release(this);
-            gotReleased = true;
-        }
+        Destroy(gameObject);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         PingDisplayHandler.Instance.DisplayPing(collision.contacts[0].point,transform.up);
-        //Destroy(gameObject);
-        if(!gotReleased)
-        {
-        pingPool.Release(this);
-            gotReleased = true;
-        }
-    }
-
-    public void SetPool(ObjectPool<PingProjectile> pool)
-    {
-        pingPool = pool;
+        Destroy(gameObject);
     }
 }

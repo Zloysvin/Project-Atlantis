@@ -4,8 +4,9 @@ using UnityEngine;
 public class GameOverEffect : MonoBehaviour
 {
     public static GameOverEffect Instance;
-    [SerializeField] private float reloadDuration = 2f;
+    [SerializeField] private float reloadDuration = 10f;
     [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private GameObject gameFinishScreen;
     [SerializeField] private Material screenOverlay;
 
     [Header("Material manipulation related:")]
@@ -39,7 +40,6 @@ public class GameOverEffect : MonoBehaviour
         float timer = reloadDuration;
         screenOverlay.EnableKeyword("PIXELATE_ON");
         gameOverScreen.SetActive(true);
-        SceneLoader.Instance.LoadScene(0);
 
         while (timer > 0)
         {
@@ -48,6 +48,33 @@ public class GameOverEffect : MonoBehaviour
             timer -= interval;
             yield return new WaitForSeconds(interval);
         }
+        SceneLoader.Instance.LoadScene(0);
+
+        screenOverlay.DisableKeyword("PIXELATE_ON");
+    }
+
+    [ContextMenu("TestDeath")]
+    public void TriggerFinishEffect()
+    {
+        if (isBusy) return;
+        StartCoroutine(PlayDeathAnimation());
+    }
+
+    private IEnumerator PlayFinishAnimation()
+    {
+        isBusy = true;
+        float timer = reloadDuration;
+        screenOverlay.EnableKeyword("PIXELATE_ON");
+        gameFinishScreen.SetActive(true);
+
+        while (timer > 0)
+        {
+            screenOverlay.SetInt("_PixelateSize", Random.Range(pixelationAmountRange.x, pixelationAmountRange.y));
+            float interval = Random.Range(pixelationChangeInterval.x, pixelationChangeInterval.y);
+            timer -= interval;
+            yield return new WaitForSeconds(interval);
+        }
+        SceneLoader.Instance.LoadScene(0);
 
         screenOverlay.DisableKeyword("PIXELATE_ON");
     }

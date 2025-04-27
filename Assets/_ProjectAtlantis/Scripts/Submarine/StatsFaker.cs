@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Random = UnityEngine.Random;
 
 public class StatsFaker : MonoBehaviour
 {
@@ -73,10 +74,26 @@ public class StatsFaker : MonoBehaviour
             currentRatioX = (transform.position.x - horizontalLevelDimension.x) / horizontalLevelDimension.y;
             currentRatioY = (transform.position.y - verticalLevelDimension.x) / verticalLevelDimension.y;
 
-            CurrentTemperature = $"Temp: {temperatureDistributionCurve.Evaluate(currentRatioY):0.0}°";
-            CurrentPressure = $"{meterDistributionCurve.Evaluate(currentRatioY)*0.1+1:0}bar";
-            CurrentDepth = $"{meterDistributionCurve.Evaluate(currentRatioY):0} meters";
-            CurrentCords = $"{northCoordCurve.Evaluate(currentRatioY):0.0}°N,{eastCoordCurve.Evaluate(currentRatioX):0.0}°E";
+            if(PingDisplayHandler.Instance.CrazynessFactor > 0.2f)
+            {
+                float factor = PingDisplayHandler.Instance.CrazynessFactor;
+
+                CurrentTemperature =
+                    $"Temp: {(temperatureDistributionCurve.Evaluate(currentRatioY) + Random.Range(-factor, factor)):0.0}°";
+                CurrentPressure = $"{(meterDistributionCurve.Evaluate(currentRatioY) * 0.1 + 1 + Random.Range(-factor, factor) * 10f):0}bar";
+                CurrentDepth = $"{(meterDistributionCurve.Evaluate(currentRatioY) + Random.Range(-factor, factor) * 300f):0} meters";
+                CurrentCords =
+                    $"{(northCoordCurve.Evaluate(currentRatioY) + Random.Range(-factor, factor) * 7):0.0}°N,{(eastCoordCurve.Evaluate(currentRatioX) + Random.Range(-factor, factor) * 9):0.0}°E";
+            }
+            else
+            {
+                CurrentTemperature =
+                    $"Temp: {(temperatureDistributionCurve.Evaluate(currentRatioY)):0.0}°";
+                CurrentPressure = $"{(meterDistributionCurve.Evaluate(currentRatioY) * 0.1 + 1):0}bar";
+                CurrentDepth = $"{(meterDistributionCurve.Evaluate(currentRatioY)):0} meters";
+                CurrentCords =
+                $"{(northCoordCurve.Evaluate(currentRatioY)):0.0}°N,{(eastCoordCurve.Evaluate(currentRatioX)):0.0}°E";
+            }
 
             OnFakeStatsChanged?.Invoke(CurrentTemperature, CurrentPressure, CurrentDepth, CurrentCords);
             yield return new WaitForSeconds(updateInterval);

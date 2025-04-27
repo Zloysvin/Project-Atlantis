@@ -27,14 +27,4 @@ public class Beacon : MonoBehaviour
             yield return null;
         }
     }
-
-    private void OnMouseEnter()
-    {
-        LogEntryController.Instance.UpdateCurrentLogLine($"[Beacon at: {beaconCoordinates}]");
-    }
-
-    private void OnMouseExit()
-    {
-        LogEntryController.Instance.ClearCurrentLogLine();
-    }
 }

@@ -102,6 +102,8 @@ public class SubmarineSoundEmmiter : MonoBehaviour, ISoundSystemMember
         if (hour == 0) hour = 12;
         else if (hour > 12) hour -= 12;
 
+        LogEntryController.Instance.AddLogEntry($"Unknown Contact At {hour} O'clock. Distance {(int)distance}.", LogEntryMode.Warning);
+
         //Debug.Log($"Contact at {hour} o'clock. Distance {(int)distance}. Actual angle {angle}");
     }
 }

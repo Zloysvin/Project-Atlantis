@@ -124,14 +124,14 @@ public class InGameUIController : MonoBehaviour
             engineButtonImage.material = buttonFGMat;
             engineIconImage.material = buttonBGMat;
             engineStatusInfo.text = "On";
-            LogEntryController.Instance.AddLogEntryNormal("Turned engines on.");
+            LogEntryController.Instance.AddLogEntry("Turned engines on.");
         }
         else
         {
             engineButtonImage.material = buttonBGMat;
             engineIconImage.material = buttonFGMat;
             engineStatusInfo.text = "Off";
-            LogEntryController.Instance.AddLogEntryWarning("Turned engines off!");
+            LogEntryController.Instance.AddLogEntry("Turned engines off!");
         }
     }
     public void UnhoverEngineShutdownButton()
@@ -160,7 +160,7 @@ public class InGameUIController : MonoBehaviour
         sonarActiveButtonImage.material = buttonFGMat;
 
         sonarStatusInfo.text = "Mode: Active";
-        LogEntryController.Instance.AddLogEntryNormal("Switched sonar mode to active.");
+        LogEntryController.Instance.AddLogEntry("Switched sonar mode to active.");
     }
     public void TurnOnSonarListenMode()
     {
@@ -172,7 +172,7 @@ public class InGameUIController : MonoBehaviour
         sonarActiveButtonImage.material = buttonBGMat;
 
         sonarStatusInfo.text = "Mode: Passive";
-        LogEntryController.Instance.AddLogEntryNormal("Switched sonar mode to passive.");
+        LogEntryController.Instance.AddLogEntry("Switched sonar mode to passive.");
     }
 
     public void UnoverSonarListenButton()
