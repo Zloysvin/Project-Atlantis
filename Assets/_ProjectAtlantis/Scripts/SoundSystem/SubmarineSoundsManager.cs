@@ -6,15 +6,30 @@ public class SubmarineSoundsManager : MonoBehaviour
 {
     public static SubmarineSoundsManager Instance;
 
+    [Header("Submarine")]
     [SerializeField] private SubmarineSoundEmmiter emmiter;
+    [SerializeField] private SubmarineController controller;
+
+    [Header("Sonar")]
     [SerializeField] private AudioSource Sonar;
     [SerializeField] private float SonarSoundRange;
 
+    [Header("Engines")] 
+    [SerializeField] private float EngineSoundEmitDelay = 5f;
+
     [SerializeField] private AudioSource ElectricEngine;
     [SerializeField] private float ElectricEngineSoundRange;
+    [SerializeField] private AudioClip ElectricEngineSound;
+    [SerializeField] private AudioClip ElectricEngineStartupSound;
+    [SerializeField] private AudioClip ElectricEngineOffSound;
+
     [SerializeField] private AudioSource DieselEngine;
     [SerializeField] private float DieselEngineSoundRange;
+    [SerializeField] private AudioClip DieselEngineSound;
+    [SerializeField] private AudioClip DieselEngineStartupSound;
+    [SerializeField] private AudioClip DieselEngineOffSound;
 
+    [Header("Ambience")]
     [SerializeField] private List<AudioClip> SubAmbienceSounds;
     [SerializeField] private AudioSource SubmarineAmbience;
     [SerializeField] private int minSubSoundBreak;
@@ -22,6 +37,8 @@ public class SubmarineSoundsManager : MonoBehaviour
 
     [SerializeField] private AudioSource SubmarineCollision;
     [SerializeField] private List<AudioClip> CollisionSounds;
+
+    private bool EngineIsWorking;
 
     void Awake()
     {
@@ -36,7 +53,6 @@ public class SubmarineSoundsManager : MonoBehaviour
 
     void Update()
     {
-        EmitElectricEngine(); // TODO: Add method to toggle Electric and Diesel Engines
     }
 
     public void EmitSonar()
@@ -45,22 +61,75 @@ public class SubmarineSoundsManager : MonoBehaviour
         emmiter.SendSound(null, SonarSoundRange);
     }
 
-    public void EmitElectricEngine()
+    private IEnumerator EngineSignalCoroutine(float range)
     {
-        //Debug.Log(ElectricEngine.isPlaying);
-        if(ElectricEngine.time >= ElectricEngine.clip.length)
+        while (EngineIsWorking)
         {
-            ElectricEngine.Play();
-            emmiter.SendSound(null, ElectricEngineSoundRange);
+            emmiter.SendSound(null, range);
+            yield return new WaitForSeconds(EngineSoundEmitDelay);
         }
     }
 
-    public void EmitDieselEngine()
+    public void StartEngine(bool dieselEngineOn)
     {
-        if(!DieselEngine.isPlaying)
+        ElectricEngine.Stop();
+        DieselEngine.Stop();
+
+        if (!dieselEngineOn)
         {
+            var coroutine = EngineStartUpCoroutine(ElectricEngineStartupSound, ElectricEngineSound, ElectricEngine);
+            StartCoroutine(coroutine);
+        }
+        else
+        {
+            var coroutine = EngineStartUpCoroutine(DieselEngineStartupSound, DieselEngineSound, DieselEngine);
+            StartCoroutine(coroutine);
+        }
+    }
+
+    private IEnumerator EngineStartUpCoroutine(AudioClip startUp, AudioClip regularSound, AudioSource source)
+    {
+        source.clip = startUp;
+        source.Play();
+        
+        yield return new WaitForSeconds(startUp.length);
+        
+        source.Stop();
+        source.clip = regularSound;
+        source.loop = true;
+        source.Play();
+
+        EngineIsWorking = true;
+
+        if (!controller.DieselEngineOn)
+        {
+            var coroutine = EngineSignalCoroutine(ElectricEngineSoundRange);
+            StartCoroutine(coroutine);
+        }
+        else
+        {
+            var coroutine = EngineSignalCoroutine(DieselEngineSoundRange);
+            StartCoroutine(coroutine);
+        }
+    }
+
+    public void StopEngines(bool dieselEngineOn)
+    {
+        EngineIsWorking = false;
+        ElectricEngine.Stop();
+        DieselEngine.Stop();
+
+        if (!dieselEngineOn)
+        {
+            ElectricEngine.loop = false;
+            ElectricEngine.clip = ElectricEngineOffSound;
+            ElectricEngine.Play();
+        }
+        else
+        {
+            DieselEngine.loop = false;
+            DieselEngine.clip = DieselEngineOffSound;
             DieselEngine.Play();
-            emmiter.SendSound(null, DieselEngineSoundRange);
         }
     }
 

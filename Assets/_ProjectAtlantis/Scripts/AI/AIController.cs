@@ -52,6 +52,9 @@ public class AIController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        agent.angularSpeed = rotationSpeed;
+        agent.speed = moveSpeed;
     }
 
     private void Start()
@@ -84,8 +87,9 @@ public class AIController : MonoBehaviour
 
                 target = PatrolPoints[currentIndex].position;
                 agent.SetDestination(target);
-                //transform.right = new Vector3(agent.velocity.x, agent.velocity.y) + transform.position;
-                transform.right = (target - transform.position).normalized;
+                transform.right = new Vector3(agent.velocity.x, agent.velocity.y) + transform.position;
+                //Monster should move alongside it's velocity vector, not facing the direction of the target. if monster has to do manevours, it would look very strange
+                //transform.right = (target - transform.position).normalized;
 
                 atTarget = false;
             }
@@ -138,7 +142,14 @@ public class AIController : MonoBehaviour
 
     public void CheckAgro(Vector3 target, float distance)
     {
-        if (distance <= interestRange)
+        if (state == AIState.Investigation && distance <= agroRange)
+        {
+            state = AIState.Agro;
+            atOrbit = false;
+            this.target = target;
+            agent.SetDestination(target);
+        }
+        else if (distance <= interestRange)
         {
             state = AIState.Investigation;
             atOrbit = false;
@@ -146,13 +157,6 @@ public class AIController : MonoBehaviour
             agent.SetDestination(target);
 
             GenerateDynamicOrbit(target);
-        }
-        else if(state == AIState.Investigation && distance <= agroRange)
-        {
-            state = AIState.Agro;
-            atOrbit = false;
-            this.target = target;
-            agent.SetDestination(target);
         }
     }
 

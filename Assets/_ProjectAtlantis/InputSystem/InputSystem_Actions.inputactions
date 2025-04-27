@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Turn",
+                    "type": "Button",
+                    "id": "217c92db-b7ed-48e6-82c9-b54430920e62",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -211,6 +220,17 @@
                     "action": "Rotate",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "4cd16604-7273-4fc2-a262-29b647c84600",
+                    "path": "<Keyboard>/u",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
